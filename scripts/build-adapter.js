@@ -127,22 +127,72 @@ function build() {
 
   // 2. Copy Selected High-Value Skills
   const curatedSkills = [
+    // UI/UX, Design, Motion & Aesthetics
     'liquid-glass-design',
     'make-interfaces-feel-better',
+    'frontend-patterns',
+    'frontend-design-direction',
+    'motion-advanced',
+    'motion-foundations',
+    'motion-patterns',
+    'dashboard-builder',
+    'accessibility',
+    'ui-demo',
+
+    // Cybersecurity, Forensics & Vulnerability Defense
     'security-bounty-hunter',
     'canary-watch',
+    'security-review',
+    'security-scan',
+    'agent-security-hardening',
+    'safety-guard',
+
+    // Computer Networks & Infrastructure
     'network-interface-health',
     'network-config-validation',
-    'fastapi-patterns',
-    'react-patterns',
-    'react-performance',
-    'tdd-workflow',
-    'verification-loop',
+    'network-bgp-diagnostics',
     'homelab-network-setup',
     'homelab-vlan-segmentation',
     'homelab-wireguard-vpn',
-    'agent-security-hardening',
-    'silent-failure-hunter'
+    'homelab-network-readiness',
+    'netmiko-ssh-automation',
+
+    // Backend, API & Data
+    'fastapi-patterns',
+    'backend-patterns',
+    'api-design',
+    'database-migrations',
+    'postgres-patterns',
+    'redis-patterns',
+    'docker-patterns',
+
+    // Frontend Frameworks & Performance
+    'react-patterns',
+    'react-performance',
+    'react-testing',
+    'vite-patterns',
+
+    // Engineering Rigor & Quality
+    'tdd-workflow',
+    'verification-loop',
+    'error-handling',
+    'coding-standards',
+    'e2e-testing',
+    'windows-desktop-e2e',
+
+    // Agentic Architecture & Multi-Agent Loops
+    'agentic-engineering',
+    'agent-architecture-audit',
+    'agent-harness-construction',
+    'agent-introspection-debugging',
+    'continuous-learning',
+    'continuous-learning-v2',
+    'cost-aware-llm-pipeline',
+    'council',
+    'council-multi-model',
+    'team-builder',
+    'deep-research',
+    'search-first'
   ];
 
   let skillsCopied = 0;
