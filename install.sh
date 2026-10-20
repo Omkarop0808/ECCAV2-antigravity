@@ -92,4 +92,4 @@ fi
 
 echo ""
 echo "[SUCCESS] ECC Antigravity is now fully active in: $TARGET_DIR"
-echo "Open the project in Antigravity IDE and start coding with 71 specialized agents!"
+echo "Open the project in Antigravity IDE and start coding with 75 specialized agents and 433 production skills!"

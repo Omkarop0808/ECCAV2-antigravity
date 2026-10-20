@@ -111,5 +111,5 @@ if (Test-Path $RefsSrc) {
 
 Write-Host ""
 Write-Host "[SUCCESS] ECC Antigravity is now fully active in: $TargetPath" -ForegroundColor Green
-Write-Host "Open the project in Antigravity IDE and start coding with 71 specialized agents!" -ForegroundColor Cyan
+Write-Host "Open the project in Antigravity IDE and start coding with 75 specialized agents and 433 production skills!" -ForegroundColor Cyan
 Write-Host ""
