@@ -8,6 +8,7 @@
   },
   "scripts": {
     "build": "node scripts/build-adapter.js",
+    "import:super": "node scripts/import-super-skills.js",
     "doctor": "node scripts/doctor.js",
     "install:local": "powershell -ExecutionPolicy Bypass -File ./install.ps1"
   },

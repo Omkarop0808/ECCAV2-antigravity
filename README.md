@@ -1,10 +1,10 @@
 # ECC for Google Antigravity (AGY-ECC) 🚀
 
-> **The definitive agentic engineering harness for Google Antigravity IDE — bringing 71 specialized AI agents, 68 curated skills (including full 3D R3F & UI/UX Pro suites), enterprise architecture rules, and autonomous workflows from Everything Claude Code (ECC) into a native Antigravity environment.**
+> **The ultimate agentic engineering super-harness for Google Antigravity IDE — unifying 71 specialized AI agents, Impeccable Design Director, Superpowers creative thinking, GSD & Graphify token-saving codebase intelligence, and full 3D R3F suites (148 total production skills).**
 
-[![Antigravity Compatible](https://img.shields.io/badge/Harness-Google%20Antigravity-4285F4?logo=google&logoColor=white)](#overview)
-[![Agents](https://img.shields.io/badge/Agents-71%20Specialized-00C853)](#-available-agents-catalog)
-[![Skills](https://img.shields.io/badge/Skills-68%20Production%20Skills-38BDF8)](#-included-skills-catalog)
+[![Antigravity Compatible](https://img.shields.io/badge/Harness-Google%20Antigravity-4285F4?logo=google&logoColor=white)](https://github.com/Omkarop0808/ECC-antigravity)
+[![Agents](https://img.shields.io/badge/Agents-71%20Specialized-00C853)](https://github.com/Omkarop0808/ECC-antigravity#-available-agents-catalog)
+[![Skills](https://img.shields.io/badge/Skills-148%20Production%20Skills-38BDF8)](https://github.com/Omkarop0808/ECC-antigravity#-complete-skills-catalog-148-skills)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![GitHub Stars](https://img.shields.io/github/stars/Omkarop0808/ECC-antigravity?style=social)](https://github.com/Omkarop0808/ECC-antigravity)
 
@@ -12,14 +12,13 @@
 
 ## 📖 Overview
 
-**ECC for Antigravity** transforms Google Antigravity into a coordinated multi-agent engineering powerhouse. While originally designed for Claude Code, Google Antigravity agents require specialized personas, strict prompt defenses, and modular rules to produce enterprise-grade software.
+**ECC for Antigravity** transforms Google Antigravity into a coordinated multi-agent engineering powerhouse. It bridges and unifies the five most celebrated AI developer ecosystems into a single turnkey `.agents/` package:
 
-This repository provides a **turnkey adapter and distribution engine** that:
-
-- 🛠️ **Translates Tool Primitives:** Automatically maps Claude tool calls (`Read`, `Write`, `Edit`, `Grep`, `Bash`) to native Antigravity tools (`view_file`, `write_to_file`, `replace_file_content`, `grep_search`, `run_command`).
-- 🧠 **Aligns Model Tiers:** Maps model hierarchies (`haiku` ➔ `flash`, `sonnet`/`opus` ➔ `pro`).
-- 🎨 **Built-In 3D & UI/UX Powerhouse:** Includes full React Three Fiber (12 R3F skills), Three.js, `ui-ux-pro-max`, `design-taste-frontend`, `liquid-glass-design`, and reference playbooks.
-- 📁 **Standardized `.agents/` Layout:** Formats all assets into `.agents/rules`, `.agents/agents`, `.agents/skills`, and `.agents/workflows` for instant auto-discovery.
+1. 🤖 **71 Specialized Agent Personas:** Dedicated domain specialists (`security-reviewer`, `network-architect`, `fastapi-reviewer`, `react-reviewer`, `silent-failure-hunter`, `performance-optimizer`, `tdd-guide`, etc.).
+2. 🎨 **Impeccable Design Engine (v4.1.2):** Award-winning design direction, optical alignment, visual hierarchy, typography, palettes, and design audits.
+3. ⚡ **Superpowers Creative & Engineering Discipline:** Lateral brainstorming, systematic debugging without guesswork, test-driven development, and plan execution.
+4. 🧠 **GSD (Get Shit Done) & Graphify:** Codebase knowledge graph indexing (`.planning/graphs/`) to eliminate token waste, accompanied by phase planning and milestone audits.
+5. 🎮 **Complete 3D React Three Fiber (R3F) Suite:** 12 dedicated R3F skills covering shaders, physics, lighting, animation, textures, and post-processing.
 
 ---
 
@@ -41,7 +40,7 @@ git clone git@github.com:Omkarop0808/ECC-antigravity.git
 
 1. Click the green **Code** button at the top of the GitHub page.
 2. Select **Download ZIP**.
-3. Extract the folder (e.g. to `C:\dev\ECC-antigravity` or `~/dev/ECC-antigravity`).
+3. Extract the folder (e.g., `C:\dev\ECC-antigravity` or `~/dev/ECC-antigravity`).
 
 ---
 
@@ -84,7 +83,7 @@ YourProjectRoot/
 │   ├── plugin.json
 │   ├── agents/      # 71 specialized agent personas
 │   ├── rules/       # Modular engineering rules
-│   ├── skills/      # 68 curated skills (3D, UI/UX, Security, Networks, Backend)
+│   ├── skills/      # 148 skills (Impeccable, Superpowers, GSD, R3F, UI/UX, Cyber)
 │   ├── references/  # R3F and Claude design playbooks
 │   └── workflows/   # Autonomous workflows
 ├── src/
@@ -111,7 +110,7 @@ Expected output:
 [PASS] Agents directory: 71 agents detected
 [PASS] Agent frontmatter schema verification passed
 [PASS] Rules directory: 5 engineering rules detected
-[PASS] Skills directory: 68 skills packaged
+[PASS] Skills directory: 148 skills packaged
 [PASS] Workflows directory: 3 workflows defined
 
 Diagnostics: 6 checks passed, 0 issues found.
@@ -120,46 +119,41 @@ Diagnostics: 6 checks passed, 0 issues found.
 
 ---
 
-## 🎯 How to Use in Google Antigravity
+## 🎯 How Antigravity Operates the Unified Suite
 
-Once installed in your project, Google Antigravity immediately recognizes all components:
+When you interact with Google Antigravity, it automatically routes through the appropriate lens:
 
-### 1. Automatic Rule Enforcement
-
-Antigravity automatically reads the rules in `.agents/rules/` to guide every generation:
-
-- `python-fastapi.md` — Enforces async patterns, non-blocking I/O, Pydantic v2 schemas, and CORS security.
-- `react-typescript.md` — Enforces hook dependency arrays, render performance, and container/presentational split.
-- `cyber-defense-security.md` — Enforces MITRE ATT&CK attribution, forensic immutability, and canary discipline.
-- `web-design-system.md` — Enforces Liquid Glass styling, concentric radii, optical alignment, and 3D WebGL optimization.
-- `anti-failure-patterns.md` — Enforces zero tolerance for empty catch blocks and silent failures.
-
-### 2. Invoking Specialized Agents
-
-In your conversation with Antigravity, ask it to adopt any specialized role:
-
-- **Security Review:**  
-  *"Please invoke `security-reviewer` to audit our auth endpoints for OWASP Top 10 vulnerabilities."*
-- **Network Architecture:**  
-  *"Act as `network-architect` and design a segmented VLAN topology for our endpoint monitoring server."*
-- **React Performance & Hooks:**  
-  *"Run `react-reviewer` on `frontend/src/components/ThreeSecurityGlobe.tsx` to check hook dependencies and WebGL memory leaks."*
-- **Silent Error Detection:**  
-  *"Run `silent-failure-hunter` across `src/engine/` to find swallowed exceptions or dangerous fallback returns."*
-- **FastAPI Async Correctness:**  
-  *"Review our REST routes in `src/api/` using `fastapi-reviewer`."*
-
-### 3. Running Pre-Packaged Workflows
-
-Direct Antigravity to run structured autonomous workflows located in `.agents/workflows/`:
-
-- **Security Audit:** `security-audit.md` (Multi-phase static code, secrets, and auth audit)
-- **Code Review:** `code-review.md` (Context gathering -> agent delegation -> synthesis)
-- **Attack Simulation:** `attack-simulation.md` (APT kill-chain simulation and defensive telemetry validation)
+```text
+[Your Request: "Build this new feature or dashboard"]
+                     │
+                     ▼
+  Phase 1: Creative Thinking & User Flow
+  ↳ Agent activates `superpowers:brainstorming` + `impeccable`
+    Explores intent, bold visual palettes, layout options, and UX flow.
+                     │
+                     ▼
+  Phase 2: Token-Saving Architecture & Specs
+  ↳ Agent activates `gsd-graphify` + `gsd-plan-phase`
+    Queries the knowledge graph without wasting context tokens, 
+    then produces a verifiable milestone plan.
+                     │
+                     ▼
+  Phase 3: Deep Domain Implementation
+  ↳ Agent activates specialized ECC agents & skills:
+    - 3D elements? ➔ `r3f-fundamentals` + `threejs`
+    - High-craft UI? ➔ `ui-ux-pro-max` + `liquid-glass-design`
+    - Backend/API? ➔ `fastapi-reviewer` + `fastapi-patterns`
+    - Security/Threats? ➔ `security-reviewer` + `canary-watch`
+                     │
+                     ▼
+  Phase 4: Quality, Verification & Audit
+  ↳ Agent activates `superpowers:verification-before-completion` + `impeccable audit`
+    Runs tests, lints, and optical design checks before declaring completion.
+```
 
 ---
 
-## 🤖 Available Agents Catalog
+## 🤖 Available Agents Catalog (Selected Core)
 
 | Agent Persona | Category | Core Specialty |
 | :--- | :--- | :--- |
@@ -185,23 +179,53 @@ Direct Antigravity to run structured autonomous workflows located in `.agents/wo
 
 ---
 
-## 📦 Included Skills Catalog (68 Skills)
+## 📦 Complete Skills Catalog (148 Skills)
 
-### 1. React Three Fiber & 3D Web Suite (12 Skills)
+### 1. Impeccable Design Engine (v4.1.2)
+
+- `impeccable` — Out-of-distribution design craft, visual hierarchy, typography, optical alignment, spacing, color theory, motion, and design audits.
+
+### 2. Superpowers Creative & Engineering Suite (15 Skills)
+
+- `brainstorming` — Creative lateral thinking, requirements exploration, and user intent alignment before coding
+- `systematic-debugging` — Structured root-cause debugging without guesswork
+- `test-driven-development` — Red-Green-Refactor test cycle enforcement
+- `executing-plans`, `writing-plans` — Architectural breakdown and execution
+- `subagent-driven-development` — Dispatching isolated subagents for tasks
+- `verification-before-completion` — Strict verification evidence before claiming completion
+- `finishing-a-development-branch`, `using-git-worktrees` — Safe git branching and clean PR finishing
+- `using-superpowers`, `diagnosing-superpowers`, `dispatching-parallel-agents`
+- `receiving-code-review`, `requesting-code-review`, `writing-skills`
+
+### 3. GSD (Get Shit Done) & Graphify Engine (64 Skills)
+
+- `gsd-graphify` — Codebase knowledge graph indexing in `.planning/graphs/` (saves 70%+ token context)
+- `gsd-plan-phase`, `gsd-execute-phase`, `gsd-verify-work` — Milestone planning and execution
+- `gsd-audit-fix`, `gsd-audit-milestone`, `gsd-audit-uat` — Automated audit pipelines
+- `gsd-map-codebase`, `gsd-onboard`, `gsd-new-project`, `gsd-new-milestone` — Project initialization
+- `gsd-debug`, `gsd-forensics`, `gsd-undo` — Debugging and safe git rollback
+- `gsd-quick`, `gsd-quick-batch`, `gsd-fast` — Lightweight execution for rapid iterations
+- `gsd-manager`, `gsd-workstreams`, `gsd-workspace` — Multi-phase orchestration
+- `gsd-mempalace-capture`, `gsd-mempalace-recall` — Temporal decision memory
+- `gsd-ui-phase`, `gsd-ui-review`, `gsd-add-tests`, `gsd-ship`, `gsd-autonomous`
+
+### 4. React Three Fiber & 3D Web Suite (12 Skills)
+
 - `threejs` — Three.js scene, camera, render loop, lighting, performance
 - `r3f-fundamentals` — Canvas setup, typed JSX, hooks, resource ownership
-- `r3f-animation` — useFrame, damping, GLTF clips, procedural motion
+- `r3f-animation` — `useFrame`, damping, GLTF clips, procedural motion
 - `r3f-geometry` — Custom buffer geometries, instancing, points, lines
 - `r3f-interaction` — Pointer events, picking, dragging, keyboard input
 - `r3f-lighting` — Direct lights, environment maps, HDR, contact shadows
-- `r3f-loaders` — useGLTF, useLoader, Draco compression, caching
+- `r3f-loaders` — `useGLTF`, `useLoader`, Draco compression, caching
 - `r3f-materials` — PBR materials, transparency, transmission, glass
 - `r3f-physics` — Rapier rigid bodies, colliders, forces, physics joints
 - `r3f-postprocessing` — Bloom, selective glow, depth of field, chromatic aberration
 - `r3f-shaders` — Custom GLSL/TSL shaders, uniforms, vertex displacement
 - `r3f-textures` — sRGB color space, UV channels, video textures, render targets
 
-### 2. UI/UX Design, Aesthetics & Motion (10 Skills)
+### 5. UI/UX Design, Aesthetics & Motion (10 Skills)
+
 - `ui-ux-pro-max` — Full professional UI/UX design heuristics & layouts
 - `design-taste-frontend` — Aesthetic direction, distinctive visual craft
 - `frontend-design` — Bespoke component composition & typography
@@ -211,7 +235,8 @@ Direct Antigravity to run structured autonomous workflows located in `.agents/wo
 - `motion-advanced`, `motion-foundations`, `motion-patterns` — Fluid animation systems
 - `accessibility` — WCAG 2.2 compliance, ARIA labels, focus states
 
-### 3. Cybersecurity & Forensics (6 Skills)
+### 6. Cybersecurity & Forensics (6 Skills)
+
 - `security-bounty-hunter` — Remote exploit & vulnerability hunting
 - `canary-watch` — Honeypot files & intrusion tripwires
 - `security-review` — Full application security audit
@@ -219,7 +244,8 @@ Direct Antigravity to run structured autonomous workflows located in `.agents/wo
 - `agent-security-hardening` — Prompt injection defense & sandboxing
 - `safety-guard` — Defensive execution boundaries
 
-### 4. Computer Networks & Infrastructure (8 Skills)
+### 7. Computer Networks & Infrastructure (8 Skills)
+
 - `network-interface-health` — Drops, CRC errors, link flaps
 - `network-config-validation` — Dangerous command detection
 - `network-bgp-diagnostics` — Neighbor peering & route-policy analysis
@@ -227,12 +253,14 @@ Direct Antigravity to run structured autonomous workflows located in `.agents/wo
 - `homelab-network-readiness` — Pre-flight network assessment
 - `netmiko-ssh-automation` — Automated network configuration review
 
-### 5. Backend, API, Database & Frontend Frameworks (11 Skills)
+### 8. Backend, Database & Frontend Frameworks (11 Skills)
+
 - `fastapi-patterns`, `backend-patterns`, `api-design`
 - `database-migrations`, `postgres-patterns`, `redis-patterns`, `docker-patterns`
 - `react-patterns`, `react-performance`, `react-testing`, `vite-patterns`
 
-### 6. Engineering Rigor & Multi-Agent Loops (21 Skills)
+### 9. Engineering Rigor & Multi-Agent Loops (21 Skills)
+
 - `tdd-workflow`, `verification-loop`, `error-handling`, `coding-standards`, `e2e-testing`, `windows-desktop-e2e`
 - `agentic-engineering`, `agent-architecture-audit`, `agent-harness-construction`, `agent-introspection-debugging`
 - `continuous-learning`, `continuous-learning-v2`, `cost-aware-llm-pipeline`, `council`, `council-multi-model`
@@ -248,7 +276,10 @@ If you wish to pull newer agents or update your local build:
 # 1. Run the adapter compiler:
 node scripts/build-adapter.js
 
-# 2. Verify all components:
+# 2. Re-import super skills (Impeccable, Superpowers, GSD):
+node scripts/import-super-skills.js
+
+# 3. Verify all components:
 node scripts/doctor.js
 ```
 
