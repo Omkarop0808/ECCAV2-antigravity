@@ -48,28 +48,32 @@ git clone git@github.com:Omkarop0808/ECC-antigravity.git
 
 Once cloned, you can install the entire ECC Antigravity system into **any existing or new project** with a single command.
 
-### Method A: Windows PowerShell (One-Click)
+### Method A: Global Install (Recommended for ALL Workspaces)
+
+Installs ECC globally to `~/.gemini/config/`. Antigravity will automatically activate all 71 agents, 149 skills, and rules across **every project you ever open**, without needing per-repo installation:
+
+```powershell
+# PowerShell (Windows):
+& "C:\path\to\ECC-antigravity\install.ps1" -Global
+
+# Bash (macOS / Linux / WSL):
+/path/to/ECC-antigravity/install.sh --global
+```
+
+### Method B: Project-Level Install (Per-Repository)
 
 Navigate to the project you want to upgrade, and run:
 
 ```powershell
-# 1. Open PowerShell in your target project directory (e.g. C:\dev\MyProject):
-cd C:\dev\MyProject
+# In your target project directory (e.g. C:\dev\MyProject):
+& "C:\path\to\ECC-antigravity\install.ps1"
 
-# 2. Run the installer pointing from the cloned ECC-antigravity repository:
-& "C:\dev\ECC-antigravity\install.ps1"
+# Or specify -TargetPath explicitly:
+& "C:\path\to\ECC-antigravity\install.ps1" -TargetPath "C:\dev\MyProject"
 ```
-
-*Or install to a remote directory by specifying `-TargetPath`:*
-
-```powershell
-& "C:\dev\ECC-antigravity\install.ps1" -TargetPath "C:\dev\MyProject"
-```
-
-### Method B: macOS / Linux / WSL (One-Click)
 
 ```bash
-# From anywhere, pass your project root as an argument:
+# macOS / Linux / WSL:
 /path/to/ECC-antigravity/install.sh /path/to/your/project
 ```
 
@@ -81,11 +85,14 @@ Copy the `.agents/` directory directly into the root of your project:
 YourProjectRoot/
 ├── .agents/
 │   ├── plugin.json
-│   ├── agents/      # 71 specialized agent personas
-│   ├── rules/       # Modular engineering rules
-│   ├── skills/      # 148 skills (Impeccable, Superpowers, GSD, R3F, UI/UX, Cyber)
-│   ├── references/  # R3F and Claude design playbooks
-│   └── workflows/   # Autonomous workflows
+│   ├── AGENTS.md        # Operating contract
+│   ├── GEMINI.md        # Baseline rules
+│   ├── SKILLS_INDEX.md  # Dynamic 149 skills catalog
+│   ├── agents/          # 71 specialized agent personas
+│   ├── rules/           # 8 modular engineering rules
+│   ├── skills/          # 149 skills (Impeccable, Superpowers, GSD, 3D WebGPU, Cyber)
+│   ├── references/      # 3 deep architecture handbooks
+│   └── workflows/       # 5 autonomous workflows
 ├── src/
 ├── package.json
 └── README.md
@@ -120,7 +127,7 @@ Expected output:
 [PASS] Found all 8 core engineering and routing rules
 [PASS] Skills directory: 149 curated skills packaged
 [PASS] Dynamic Index: All 149 skills indexed in SKILLS_INDEX.md
-[PASS] Workflows directory: 3 workflows defined
+[PASS] Workflows directory: 5 workflows defined
 [PASS] Installer: install.ps1 verified
 [PASS] Installer: install.sh verified
 [PASS] References directory: 3 playbooks & architecture handbooks verified

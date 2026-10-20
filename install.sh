@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 # ECC for Google Antigravity - One-Click Installer (Bash / Unix / WSL)
 # Usage:
-#   ./install.sh [/path/to/target/project]
+#   ./install.sh [/path/to/target/project]   (Installs to project .agents/)
+#   ./install.sh --global                    (Installs globally to ~/.gemini/config/ for all workspaces)
 
 set -e
 
-TARGET_DIR="${1:-$(pwd)}"
+ARG="${1:-$(pwd)}"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 SOURCE_AGENTS="$SCRIPT_DIR/.agents"
-DEST_AGENTS="$TARGET_DIR/.agents"
 
 echo "=========================================================="
 echo "   ECC for Google Antigravity - Project Setup Engine      "
@@ -19,8 +19,19 @@ if [ ! -d "$SOURCE_AGENTS" ]; then
   exit 1
 fi
 
-echo "[*] Source: $SOURCE_AGENTS"
-echo "[*] Destination: $DEST_AGENTS"
+if [ "$ARG" = "--global" ] || [ "$ARG" = "-g" ]; then
+  DEST_AGENTS="$HOME/.gemini/config"
+  IS_GLOBAL=1
+  echo "[*] Mode: GLOBAL (Applies to ALL projects opened in Antigravity)"
+  echo "[*] Destination: $DEST_AGENTS"
+else
+  TARGET_DIR="$ARG"
+  DEST_AGENTS="$TARGET_DIR/.agents"
+  IS_GLOBAL=0
+  echo "[*] Mode: PROJECT (Local to $TARGET_DIR)"
+  echo "[*] Destination: $DEST_AGENTS"
+  mkdir -p "$TARGET_DIR"
+fi
 
 mkdir -p "$DEST_AGENTS"
 
@@ -30,11 +41,14 @@ for file in plugin.json AGENTS.md GEMINI.md SKILLS_INDEX.md; do
     cp -f "$SOURCE_AGENTS/$file" "$DEST_AGENTS/$file"
   fi
 done
-for file in AGENTS.md GEMINI.md; do
-  if [ -f "$SOURCE_AGENTS/$file" ]; then
-    cp -f "$SOURCE_AGENTS/$file" "$TARGET_DIR/$file"
-  fi
-done
+
+if [ "$IS_GLOBAL" -eq 0 ]; then
+  for file in AGENTS.md GEMINI.md; do
+    if [ -f "$SOURCE_AGENTS/$file" ]; then
+      cp -f "$SOURCE_AGENTS/$file" "$TARGET_DIR/$file"
+    fi
+  done
+fi
 echo "[✓] Installed plugin manifest, AGENTS.md, GEMINI.md, and dynamic SKILLS_INDEX.md"
 
 # Copy Agents

@@ -1,10 +1,12 @@
 # ECC for Google Antigravity - One-Click Installer (PowerShell)
 # Usage:
-#   .\install.ps1                              (Installs to current directory)
-#   .\install.ps1 -TargetPath "C:\other\repo"  (Installs to target project)
+#   .\install.ps1                              (Installs to current workspace .agents/)
+#   .\install.ps1 -TargetPath "C:\other\repo"  (Installs to target project .agents/)
+#   .\install.ps1 -Global                      (Installs globally to ~/.gemini/config/ for all workspaces)
 
 param (
-    [string]$TargetPath = (Get-Location).Path,
+    [string]$TargetPath,
+    [switch]$Global,
     [switch]$Force
 )
 
@@ -18,13 +20,23 @@ if (-not (Test-Path $SourceAgents)) {
     exit 1
 }
 
-$DestAgents = Join-Path $TargetPath ".agents"
-Write-Host "[*] Source: $SourceAgents" -ForegroundColor Gray
-Write-Host "[*] Destination: $DestAgents" -ForegroundColor Gray
+if ($Global) {
+    # Antigravity Global Customizations Root
+    $DestAgents = Join-Path $env:USERPROFILE ".gemini\config"
+    Write-Host "[*] Mode: GLOBAL (Applies to ALL projects opened in Antigravity)" -ForegroundColor Magenta
+    Write-Host "[*] Destination: $DestAgents" -ForegroundColor Gray
+} else {
+    if ([string]::IsNullOrWhiteSpace($TargetPath)) {
+        $TargetPath = (Get-Location).Path
+    }
+    $DestAgents = Join-Path $TargetPath ".agents"
+    Write-Host "[*] Mode: PROJECT (Local to $TargetPath)" -ForegroundColor Cyan
+    Write-Host "[*] Destination: $DestAgents" -ForegroundColor Gray
 
-if (-not (Test-Path $TargetPath)) {
-    Write-Host "[+] Creating target project directory: $TargetPath" -ForegroundColor Green
-    New-Item -ItemType Directory -Path $TargetPath -Force | Out-Null
+    if (-not (Test-Path $TargetPath)) {
+        Write-Host "[+] Creating target project directory: $TargetPath" -ForegroundColor Green
+        New-Item -ItemType Directory -Path $TargetPath -Force | Out-Null
+    }
 }
 
 if (-not (Test-Path $DestAgents)) {
@@ -38,10 +50,12 @@ if (-not (Test-Path $DestAgents)) {
         Copy-Item $src (Join-Path $DestAgents $_) -Force
     }
 }
-@("AGENTS.md", "GEMINI.md") | ForEach-Object {
-    $src = Join-Path $SourceAgents $_
-    if (Test-Path $src) {
-        Copy-Item $src (Join-Path $TargetPath $_) -Force
+if (-not $Global) {
+    @("AGENTS.md", "GEMINI.md") | ForEach-Object {
+        $src = Join-Path $SourceAgents $_
+        if (Test-Path $src) {
+            Copy-Item $src (Join-Path $TargetPath $_) -Force
+        }
     }
 }
 Write-Host "[+] Installed plugin manifest, AGENTS.md, GEMINI.md, and dynamic SKILLS_INDEX.md" -ForegroundColor Green
