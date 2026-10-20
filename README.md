@@ -124,9 +124,10 @@ Expected output:
 [PASS] Installer: install.ps1 verified
 [PASS] Installer: install.sh verified
 [PASS] References directory: 3 playbooks & architecture handbooks verified
+[PASS] Zero-Byte Audit: 0 empty files detected across entire .agents harness
 
 ==========================================================
-Diagnostics Summary: 16 checks passed, 0 issues.
+Diagnostics Summary: 17 checks passed, 0 issues.
 All edge cases, agents, skills, and rules are 100% operational!
 ```
 

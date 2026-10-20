@@ -173,6 +173,33 @@ function runDoctor() {
     warnings++;
   }
 
+  // 9. Zero-Byte Integrity Audit (No empty files permitted)
+  function findZeroByteFiles(dir) {
+    let zeros = [];
+    const entries = fs.readdirSync(dir, { withFileTypes: true });
+    for (const ent of entries) {
+      const full = path.join(dir, ent.name);
+      if (ent.isDirectory()) {
+        zeros = zeros.concat(findZeroByteFiles(full));
+      } else if (ent.isFile()) {
+        const stat = fs.statSync(full);
+        if (stat.size === 0) {
+          zeros.push(path.relative(rootDir, full));
+        }
+      }
+    }
+    return zeros;
+  }
+
+  const zeroFiles = findZeroByteFiles(agentsDir);
+  if (zeroFiles.length === 0) {
+    console.log('[PASS] Zero-Byte Audit: 0 empty files detected across entire .agents harness');
+    passed++;
+  } else {
+    console.error(`[FAIL] Found ${zeroFiles.length} empty (0-byte) files:`, zeroFiles);
+    warnings += zeroFiles.length;
+  }
+
   console.log(`\n==========================================================`);
   console.log(`Diagnostics Summary: ${passed} checks passed, ${warnings} issues.`);
   if (warnings === 0) {
