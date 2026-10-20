@@ -75,6 +75,15 @@ if (Test-Path $WorkflowsSrc) {
     Write-Host "[+] Installed $wfCount agentic workflows" -ForegroundColor Green
 }
 
+# Copy References
+$RefsSrc = Join-Path $SourceAgents "references"
+$RefsDest = Join-Path $DestAgents "references"
+if (Test-Path $RefsSrc) {
+    if (-not (Test-Path $RefsDest)) { New-Item -ItemType Directory -Path $RefsDest -Force | Out-Null }
+    Copy-Item -Path "$RefsSrc\*" -Destination $RefsDest -Recurse -Force
+    Write-Host "[+] Installed reference architecture and design playbooks" -ForegroundColor Green
+}
+
 Write-Host ""
 Write-Host "[SUCCESS] ECC Antigravity is now fully active in: $TargetPath" -ForegroundColor Green
 Write-Host "Open the project in Antigravity IDE and start coding with 71 specialized agents!" -ForegroundColor Cyan

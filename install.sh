@@ -60,6 +60,13 @@ if [ -d "$SOURCE_AGENTS/workflows" ]; then
   echo "[✓] Installed $WF_COUNT agentic workflows"
 fi
 
+# Copy References
+if [ -d "$SOURCE_AGENTS/references" ]; then
+  mkdir -p "$DEST_AGENTS/references"
+  cp -rf "$SOURCE_AGENTS/references/"* "$DEST_AGENTS/references/"
+  echo "[✓] Installed reference architecture and design playbooks"
+fi
+
 echo ""
 echo "[SUCCESS] ECC Antigravity is now fully active in: $TARGET_DIR"
 echo "Open the project in Antigravity IDE and start coding with 71 specialized agents!"
