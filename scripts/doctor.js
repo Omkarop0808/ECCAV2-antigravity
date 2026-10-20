@@ -93,7 +93,8 @@ function runDoctor() {
       'python-fastapi.md',
       'react-typescript.md',
       'cyber-defense-security.md',
-      'web-design-system.md'
+      'web-design-system.md',
+      'anthropic-agentic-discipline.md'
     ];
     let allExpected = true;
     for (const er of expectedRules) {
@@ -104,7 +105,7 @@ function runDoctor() {
       }
     }
     if (allExpected) {
-      console.log('[PASS] Found all 9 core engineering and routing rules');
+      console.log(`[PASS] Found all ${expectedRules.length} core engineering and routing rules`);
       passed++;
     }
   } else {

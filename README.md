@@ -1,11 +1,12 @@
 # ECC for Google Antigravity (AGY-ECC) 🚀
 
-> **The ultimate agentic engineering super-harness for Google Antigravity IDE & Gemini CLI — unifying 75 specialized AI agents, Addy Osmani's Google SWE production quality gates, Impeccable Design Director, Superpowers & Cognitive Creative Thinking, GSD & Graphify token-saving codebase intelligence, and full 3D R3F/WebGPU/TSL suites (433 total production skills & 10 reference playbooks).**
+> **The ultimate agentic engineering super-harness for Google Antigravity IDE & Gemini CLI — unifying 75 specialized AI agents, Addy Osmani's Google SWE production quality gates, Anthropic Opus 5.5 & Fable execution discipline, Impeccable Design Director, Superpowers & Cognitive Creative Thinking, GSD & Graphify token-saving codebase intelligence, and full 3D R3F/WebGPU/TSL suites (433 total production skills & 11 reference playbooks).**
 
 [![Antigravity Compatible](https://img.shields.io/badge/Harness-Google%20Antigravity-4285F4?logo=google&logoColor=white)](https://github.com/Omkarop0808/ECC-antigravity)
 [![Agents](https://img.shields.io/badge/Agents-75%20Specialized-00C853)](https://github.com/Omkarop0808/ECC-antigravity#-available-agents-catalog)
 [![Skills](https://img.shields.io/badge/Skills-433%20Production%20Skills-38BDF8)](https://github.com/Omkarop0808/ECC-antigravity#-complete-skills-catalog-433-skills)
-[![References](https://img.shields.io/badge/References-10%20Checklists%20%26%20Handbooks-purple)](https://github.com/Omkarop0808/ECC-antigravity)
+[![Rules](https://img.shields.io/badge/Rules-10%20Core%20Rules-orange)](https://github.com/Omkarop0808/ECC-antigravity)
+[![References](https://img.shields.io/badge/References-11%20Checklists%20%26%20Handbooks-purple)](https://github.com/Omkarop0808/ECC-antigravity)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![GitHub Stars](https://img.shields.io/github/stars/Omkarop0808/ECC-antigravity?style=social)](https://github.com/Omkarop0808/ECC-antigravity)
 
@@ -13,14 +14,15 @@
 
 ## 📖 Overview
 
-**ECC for Antigravity** transforms Google Antigravity into a coordinated multi-agent engineering powerhouse. It bridges and unifies the six most celebrated AI developer ecosystems into a single turnkey `.agents/` package:
+**ECC for Antigravity** transforms Google Antigravity into a coordinated multi-agent engineering powerhouse. It bridges and unifies the seven most celebrated AI developer ecosystems into a single turnkey `.agents/` package:
 
 1. 🤖 **75 Specialized Agent Personas:** Dedicated domain specialists (`security-reviewer`, `swe-code-reviewer`, `test-engineer`, `web-performance-auditor`, `network-architect`, `fastapi-reviewer`, `react-reviewer`, `silent-failure-hunter`, `performance-optimizer`, `tdd-guide`, etc.).
 2. 🏆 **Google SWE Production Discipline (Addy Osmani `agent-skills`):** Anti-rationalization guards, `doubt-driven-development` (internal adversarial check), `constraint-driven-development` (anti-cheating floor guard), `source-driven-development` (hallucination breaker with doc citations), `code-simplification` (Rule of 500 & Chesterton's Fence), Chrome DevTools MCP live telemetry, and 7 Google-grade production checklists.
-3. 🎨 **Impeccable Design Engine (v4.1.2):** Award-winning design direction, optical alignment, visual hierarchy, typography, palettes, and design audits.
-4. ⚡ **Superpowers Creative & Engineering Discipline:** Lateral brainstorming, systematic debugging without guesswork, test-driven development, and plan execution.
-5. 🧠 **GSD (Get Shit Done) & Graphify:** Codebase knowledge graph indexing (`.planning/graphs/`) to eliminate token waste, accompanied by phase planning and milestone audits.
-6. 🎮 **Complete 3D R3F, WebGPU & TSL Suite:** 13 dedicated 3D skills covering WebGPU pipelines, Three.js Shading Language (TSL) node materials, shaders, GPU compute particles, physics, lighting, animation, textures, and post-processing.
+3. ⚡ **Anthropic Frontier Execution Standards (Opus 5.5 & Fable 5.1):** Dynamic autonomous loop pacing with prompt cache preservation, task DAG dependency graphs with anti-rationalization completion invariants, and zero-chatter tool reply hygiene (`anthropic-agentic-discipline.md`).
+4. 🎨 **Impeccable Design Engine (v4.1.2):** Award-winning design direction, optical alignment, visual hierarchy, typography, palettes, and design audits.
+5. ⚡ **Superpowers Creative & Engineering Discipline:** Lateral brainstorming, systematic debugging without guesswork, test-driven development, and plan execution.
+6. 🧠 **GSD (Get Shit Done) & Graphify:** Codebase knowledge graph indexing (`.planning/graphs/`) to eliminate token waste, accompanied by phase planning and milestone audits.
+7. 🎮 **Complete 3D R3F, WebGPU & TSL Suite:** 13 dedicated 3D skills covering WebGPU pipelines, Three.js Shading Language (TSL) node materials, shaders, GPU compute particles, physics, lighting, animation, textures, and post-processing.
 
 ---
 
