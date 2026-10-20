@@ -1,14 +1,15 @@
 {
   "name": "ecc-antigravity",
-  "version": "2.2.3",
-  "description": "ECC Antigravity Adapter & Engineering System - 71 specialized agents, enterprise rules, curated skills, and workflows tailored for Google Antigravity IDE and agents",
+  "version": "2.3.0",
+  "description": "ECC Antigravity Harness - 75 specialized agents, 432 production skills, Google SWE quality gates, 9 engineering rules, and 5 autonomous workflows tailored for Google Antigravity IDE and Gemini CLI",
   "author": "Community / Antigravity Bridge",
   "license": "MIT",
-  "homepage": "https://github.com/affaan-m/ECC",
+  "homepage": "https://github.com/Omkarop0808/ECC-antigravity",
   "customizations": {
     "agents": "./agents",
     "rules": "./rules",
     "skills": "./skills",
-    "workflows": "./workflows"
+    "workflows": "./workflows",
+    "references": "./references"
   }
 }
