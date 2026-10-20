@@ -1,0 +1,31 @@
+{
+  "name": "ecc-antigravity",
+  "version": "1.0.0",
+  "description": "ECC (Everything Claude Code) Adapter and Enterprise Agent Toolkit for Google Antigravity IDE",
+  "main": "scripts/doctor.js",
+  "bin": {
+    "ecc-antigravity": "scripts/build-adapter.js"
+  },
+  "scripts": {
+    "build": "node scripts/build-adapter.js",
+    "doctor": "node scripts/doctor.js",
+    "install:local": "powershell -ExecutionPolicy Bypass -File ./install.ps1"
+  },
+  "keywords": [
+    "antigravity",
+    "google-antigravity",
+    "ecc",
+    "agents",
+    "skills",
+    "rules",
+    "tdd",
+    "cybersecurity",
+    "ai-agent"
+  ],
+  "author": "Antigravity Engineering Community",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/affaan-m/ECC.git"
+  }
+}
