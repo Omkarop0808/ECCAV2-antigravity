@@ -18,6 +18,7 @@ In this environment, you have access to 71 specialized agent personas located in
 | **Swallowed errors / empty catches** | `silent-failure-hunter` | Audit catch blocks, verify error propagation and logging |
 | **Network topology / sockets** | `network-architect` | Check IP segmentation, VLANs, socket connection lifecycles |
 | **UI components & accessibility** | `a11y-architect` / `impeccable` | Check contrast, ARIA tags, focus states, concentric radii |
+| **3D WebGL / WebGPU / TSL** | `threejs` / `threejs-tsl-webgpu` | Set up WebGPURenderer, TSL node shaders, dispose geometry/textures |
 
 ---
 

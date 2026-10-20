@@ -11,7 +11,7 @@ Every user prompt or engineering task received in this environment must be class
 | **A** | **Trivial Fix / Typo** | Single-line fix, typo, variable rename | Direct surgical edit + verify syntax/build |
 | **B** | **New Feature / Component** | Adding new capabilities, UI screens, API endpoints | `superpowers:brainstorming` -> `impeccable` design review -> `test-driven-development` -> implement -> verify |
 | **C** | **Major Architecture / System** | Multi-file refactor, new subsystem, database migration | `gsd-plan-phase` -> `gsd-graphify` -> spec ADR -> `gsd-execute-phase` -> verify |
-| **D** | **3D WebGL / R3F Experience** | Canvas setup, shaders, 3D meshes, particle effects | `r3f-fundamentals` -> `r3f-shaders` / `r3f-interaction` -> `threejs` |
+| **D** | **3D WebGL / WebGPU / R3F** | Canvas setup, TSL shaders, compute passes, 3D meshes | `threejs` -> `threejs-tsl-webgpu` -> `r3f-fundamentals` -> `r3f-shaders` |
 | **E** | **Security / Vulnerability / Auth** | Handling secrets, input validation, encryption, JWT | `security-reviewer` agent -> `canary-watch` -> OWASP Top 10 checklist |
 | **F** | **Networking & Telemetry** | Packet inspection, routing, sockets, interface health | `network-architect` / `network-troubleshooter` -> `network-interface-health` |
 | **G** | **Code Review & Branch Finishing** | PR preparation, diff review, merge readiness | `code-reviewer` agent -> `verification-before-completion` -> `finishing-a-development-branch` |

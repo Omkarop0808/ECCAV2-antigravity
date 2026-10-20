@@ -1,10 +1,10 @@
 # ECC for Google Antigravity (AGY-ECC) 🚀
 
-> **The ultimate agentic engineering super-harness for Google Antigravity IDE — unifying 71 specialized AI agents, Impeccable Design Director, Superpowers creative thinking, GSD & Graphify token-saving codebase intelligence, and full 3D R3F suites (148 total production skills).**
+> **The ultimate agentic engineering super-harness for Google Antigravity IDE — unifying 71 specialized AI agents, Impeccable Design Director, Superpowers creative thinking, GSD & Graphify token-saving codebase intelligence, and full 3D R3F/WebGPU/TSL suites (149 total production skills).**
 
 [![Antigravity Compatible](https://img.shields.io/badge/Harness-Google%20Antigravity-4285F4?logo=google&logoColor=white)](https://github.com/Omkarop0808/ECC-antigravity)
 [![Agents](https://img.shields.io/badge/Agents-71%20Specialized-00C853)](https://github.com/Omkarop0808/ECC-antigravity#-available-agents-catalog)
-[![Skills](https://img.shields.io/badge/Skills-148%20Production%20Skills-38BDF8)](https://github.com/Omkarop0808/ECC-antigravity#-complete-skills-catalog-148-skills)
+[![Skills](https://img.shields.io/badge/Skills-149%20Production%20Skills-38BDF8)](https://github.com/Omkarop0808/ECC-antigravity#-complete-skills-catalog-149-skills)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![GitHub Stars](https://img.shields.io/github/stars/Omkarop0808/ECC-antigravity?style=social)](https://github.com/Omkarop0808/ECC-antigravity)
 
@@ -18,7 +18,7 @@
 2. 🎨 **Impeccable Design Engine (v4.1.2):** Award-winning design direction, optical alignment, visual hierarchy, typography, palettes, and design audits.
 3. ⚡ **Superpowers Creative & Engineering Discipline:** Lateral brainstorming, systematic debugging without guesswork, test-driven development, and plan execution.
 4. 🧠 **GSD (Get Shit Done) & Graphify:** Codebase knowledge graph indexing (`.planning/graphs/`) to eliminate token waste, accompanied by phase planning and milestone audits.
-5. 🎮 **Complete 3D React Three Fiber (R3F) Suite:** 12 dedicated R3F skills covering shaders, physics, lighting, animation, textures, and post-processing.
+5. 🎮 **Complete 3D R3F, WebGPU & TSL Suite:** 13 dedicated 3D skills covering WebGPU pipelines, Three.js Shading Language (TSL) node materials, shaders, GPU compute particles, physics, lighting, animation, textures, and post-processing.
 
 ---
 
@@ -118,14 +118,15 @@ Expected output:
 [PASS] Agent frontmatter schema: 100% of agents (71/71) valid
 [PASS] Rules directory: 8 engineering rules detected
 [PASS] Found all 8 core engineering and routing rules
-[PASS] Skills directory: 148 curated skills packaged
-[PASS] Dynamic Index: All 148 skills indexed in SKILLS_INDEX.md
+[PASS] Skills directory: 149 curated skills packaged
+[PASS] Dynamic Index: All 149 skills indexed in SKILLS_INDEX.md
 [PASS] Workflows directory: 3 workflows defined
 [PASS] Installer: install.ps1 verified
 [PASS] Installer: install.sh verified
+[PASS] References directory: 3 playbooks & architecture handbooks verified
 
 ==========================================================
-Diagnostics Summary: 15 checks passed, 0 issues.
+Diagnostics Summary: 16 checks passed, 0 issues.
 All edge cases, agents, skills, and rules are 100% operational!
 ```
 
@@ -270,9 +271,10 @@ When you interact with Google Antigravity, it automatically routes through the a
 - `gsd-mempalace-capture`, `gsd-mempalace-recall` — Temporal decision memory
 - `gsd-ui-phase`, `gsd-ui-review`, `gsd-add-tests`, `gsd-ship`, `gsd-autonomous`
 
-### 4. React Three Fiber & 3D Web Suite (12 Skills)
+### 4. React Three Fiber, WebGPU & 3D Web Suite (13 Skills)
 
 - `threejs` — Three.js scene, camera, render loop, lighting, performance
+- `threejs-tsl-webgpu` — Modern WebGPU pipelines, TSL node-based shaders (`Fn`, `uniform`, `float`, `vec3`), GPU compute simulations (particles, physics), `WebGPURenderer`
 - `r3f-fundamentals` — Canvas setup, typed JSX, hooks, resource ownership
 - `r3f-animation` — `useFrame`, damping, GLTF clips, procedural motion
 - `r3f-geometry` — Custom buffer geometries, instancing, points, lines
@@ -326,6 +328,12 @@ When you interact with Google Antigravity, it automatically routes through the a
 - `agentic-engineering`, `agent-architecture-audit`, `agent-harness-construction`, `agent-introspection-debugging`
 - `continuous-learning`, `continuous-learning-v2`, `cost-aware-llm-pipeline`, `council`, `council-multi-model`
 - `team-builder`, `deep-research`, `search-first`, `dashboard-builder`, `ui-demo`
+
+### 10. Architecture Playbooks & Deep References (3 Handbooks)
+
+- `threejs-tsl-webgpu-handbook.md` — Three.js TSL syntax, WebGPURenderer initialization, node materials, GPU compute passes, and resource lifecycle/cleanup patterns.
+- `react-three-fibre.md` — Production R3F architecture, fiber reconciliation, canvas lifecycle, and Drei integration.
+- `claude-frontend-design-skill.md` — Art direction for high-craft web design, typography, palettes, and visual hierarchy.
 
 ---
 

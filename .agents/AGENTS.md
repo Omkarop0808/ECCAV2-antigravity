@@ -1,6 +1,6 @@
 # ECC Antigravity Agent Operating System
 
-This repository is governed by the **ECC Antigravity Harness** — integrating 71 specialized agents, 148 production skills, and strict engineering discipline.
+This repository is governed by the **ECC Antigravity Harness** — integrating 71 specialized agents, 149 production skills, and strict engineering discipline.
 
 ---
 
@@ -18,7 +18,7 @@ This repository is governed by the **ECC Antigravity Harness** — integrating 7
 ## Available Customizations
 
 - **Agents:** Located in `.agents/agents/` (71 domain personas)
-- **Skills:** Located in `.agents/skills/` (148 curated production skills)
+- **Skills:** Located in `.agents/skills/` (149 curated production skills)
 - **Rules:** Located in `.agents/rules/` (automatic routing, Karpathy principles, backend, frontend, security)
 - **Workflows:** Located in `.agents/workflows/` (`security-audit.md`, `code-review.md`, `attack-simulation.md`)
 - **Skills Index:** Located in `.agents/SKILLS_INDEX.md` (master searchable catalog)

@@ -9,6 +9,7 @@
   "scripts": {
     "build": "node scripts/build-adapter.js",
     "import:super": "node scripts/import-super-skills.js",
+    "index": "node scripts/generate-skills-index.js",
     "doctor": "node scripts/doctor.js",
     "install:local": "powershell -ExecutionPolicy Bypass -File ./install.ps1"
   },
@@ -20,6 +21,9 @@
     "skills",
     "rules",
     "tdd",
+    "threejs",
+    "webgpu",
+    "tsl",
     "cybersecurity",
     "ai-agent"
   ],
@@ -27,6 +31,6 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/affaan-m/ECC.git"
+    "url": "https://github.com/Omkarop0808/ECC-antigravity.git"
   }
 }

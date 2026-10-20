@@ -2,7 +2,7 @@
 
 > **Purpose:** When Antigravity context budget limits truncate the active skills list in your system prompt, inspect this index and use `view_file` to load the exact `SKILL.md` before executing.
 
-**Total Packaged Skills:** 148
+**Total Packaged Skills:** 149
 
 | Skill Name | Path | Trigger / Description |
 | :--- | :--- | :--- |
@@ -144,6 +144,7 @@
 | **`team-builder`** | [`.agents/skills/team-builder/SKILL.md`](file:///.agents/skills/team-builder/SKILL.md) | Interactive picker that discovers available agent personas via the claude agents command and agents/ markdown globs, groups them into domains, has the user select up to five, dispatches them in parallel on one task, and synthesizes agreements and conflicts into a unified report. Use when composing a team of agents, browsing available agent personas, or running several specialist agents in parallel. |
 | **`test-driven-development`** | [`.agents/skills/test-driven-development/SKILL.md`](file:///.agents/skills/test-driven-development/SKILL.md) | Use when implementing any feature or bugfix, before writing implementation code |
 | **`threejs`** | [`.agents/skills/threejs/SKILL.md`](file:///.agents/skills/threejs/SKILL.md) | Use when building or debugging interactive 3D scenes on the web with Three.js (scene/camera/renderer, lights/materials, GLTF loading, controls, performance). Helpful for designers shipping 3D UI moments. |
+| **`threejs-tsl-webgpu`** | [`.agents/skills/threejs-tsl-webgpu/SKILL.md`](file:///.agents/skills/threejs-tsl-webgpu/SKILL.md) | Build modern WebGPU 3D applications, node-based shaders, TSL (Three.js Shading Language) materials, compute shaders, and WebGPU postprocessing with Three.js (r160+). Covers WebGPURenderer setup, TSL nodes (Fn, uniform, float, vec3, storage, time, uv), node materials (MeshStandardNodeMaterial), and GPU compute passes. |
 | **`ui-demo`** | [`.agents/skills/ui-demo/SKILL.md`](file:///.agents/skills/ui-demo/SKILL.md) | Record polished UI demo videos using Playwright. Use when the user asks to create a demo, walkthrough, screen recording, or tutorial video of a web application. Produces WebM videos with visible cursor, natural pacing, and professional feel. |
 | **`ui-ux-pro-max`** | [`.agents/skills/ui-ux-pro-max/SKILL.md`](file:///.agents/skills/ui-ux-pro-max/SKILL.md) | "UI/UX design intelligence for web, mobile, and desktop. This skill should be used when designing, building, reviewing, or fixing interfaces, including pages, components, design systems, accessibility, interaction, responsive layout, typography, color, charts, and stack-specific UI implementation. Searchable local data: 79 searchable styles (50 active), 192 product palettes and reasoning profiles, 74 font pairings, 119 UX guidelines, 105 icons, 17 GSAP presets, 25 chart types, and 22 stacks." |
 | **`using-git-worktrees`** | [`.agents/skills/using-git-worktrees/SKILL.md`](file:///.agents/skills/using-git-worktrees/SKILL.md) | Use when starting feature work that needs isolation from current workspace or before executing implementation plans - ensures an isolated workspace exists via native tools or git worktree fallback |

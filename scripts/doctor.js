@@ -162,6 +162,17 @@ function runDoctor() {
     }
   }
 
+  // 8. Check Reference Playbooks
+  const refsPath = path.join(agentsDir, 'references');
+  if (fs.existsSync(refsPath)) {
+    const refs = fs.readdirSync(refsPath).filter(f => f.endsWith('.md'));
+    console.log(`[PASS] References directory: ${refs.length} playbooks & architecture handbooks verified`);
+    passed++;
+  } else {
+    console.error('[FAIL] References directory missing');
+    warnings++;
+  }
+
   console.log(`\n==========================================================`);
   console.log(`Diagnostics Summary: ${passed} checks passed, ${warnings} issues.`);
   if (warnings === 0) {
