@@ -19,6 +19,6 @@ This repository is governed by the **ECC Antigravity Harness** — integrating 7
 
 - **Agents:** Located in `.agents/agents/` (71 domain personas)
 - **Skills:** Located in `.agents/skills/` (149 curated production skills)
-- **Rules:** Located in `.agents/rules/` (automatic routing, Karpathy principles, backend, frontend, security)
-- **Workflows:** Located in `.agents/workflows/` (`security-audit.md`, `code-review.md`, `attack-simulation.md`)
+- **Rules:** Located in `.agents/rules/` (9 engineering rules: codebase adaptation, automatic routing, Karpathy principles, anti-failure, backend, frontend, security)
+- **Workflows:** Located in `.agents/workflows/` (5 autonomous workflows)
 - **Skills Index:** Located in `.agents/SKILLS_INDEX.md` (master searchable catalog)

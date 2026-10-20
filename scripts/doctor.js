@@ -77,7 +77,7 @@ function runDoctor() {
     warnings++;
   }
 
-  // 4. Check Rules (8 foundational engineering rules)
+  // 4. Check Rules (9 foundational engineering rules)
   const rulesPath = path.join(agentsDir, 'rules');
   if (fs.existsSync(rulesPath)) {
     const rules = fs.readdirSync(rulesPath).filter(f => f.endsWith('.md'));
@@ -89,6 +89,7 @@ function runDoctor() {
       'karpathy-principles.md',
       'agent-orchestration.md',
       'anti-failure-patterns.md',
+      'codebase-adaptation-policy.md',
       'python-fastapi.md',
       'react-typescript.md',
       'cyber-defense-security.md',
@@ -103,7 +104,7 @@ function runDoctor() {
       }
     }
     if (allExpected) {
-      console.log('[PASS] Found all 8 core engineering and routing rules');
+      console.log('[PASS] Found all 9 core engineering and routing rules');
       passed++;
     }
   } else {

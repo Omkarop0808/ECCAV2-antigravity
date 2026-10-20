@@ -89,7 +89,7 @@ YourProjectRoot/
 │   ├── GEMINI.md        # Baseline rules
 │   ├── SKILLS_INDEX.md  # Dynamic 149 skills catalog
 │   ├── agents/          # 71 specialized agent personas
-│   ├── rules/           # 8 modular engineering rules
+│   ├── rules/           # 9 modular engineering rules (codebase adaptation, Karpathy, security)
 │   ├── skills/          # 149 skills (Impeccable, Superpowers, GSD, 3D WebGPU, Cyber)
 │   ├── references/      # 3 deep architecture handbooks
 │   └── workflows/       # 5 autonomous workflows
@@ -123,8 +123,8 @@ Expected output:
 [PASS] Operating Contract: .agents/SKILLS_INDEX.md detected
 [PASS] Agents directory: 71 specialized agents detected
 [PASS] Agent frontmatter schema: 100% of agents (71/71) valid
-[PASS] Rules directory: 8 engineering rules detected
-[PASS] Found all 8 core engineering and routing rules
+[PASS] Rules directory: 9 engineering rules detected
+[PASS] Found all 9 core engineering and routing rules
 [PASS] Skills directory: 149 curated skills packaged
 [PASS] Dynamic Index: All 149 skills indexed in SKILLS_INDEX.md
 [PASS] Workflows directory: 5 workflows defined
