@@ -31,9 +31,20 @@ if (-not (Test-Path $DestAgents)) {
     New-Item -ItemType Directory -Path $DestAgents -Force | Out-Null
 }
 
-# Copy plugin.json
-Copy-Item (Join-Path $SourceAgents "plugin.json") (Join-Path $DestAgents "plugin.json") -Force
-Write-Host "[+] Installed plugin.json manifest" -ForegroundColor Green
+# Copy Root Configurations (plugin.json, AGENTS.md, GEMINI.md, SKILLS_INDEX.md)
+@("plugin.json", "AGENTS.md", "GEMINI.md", "SKILLS_INDEX.md") | ForEach-Object {
+    $src = Join-Path $SourceAgents $_
+    if (Test-Path $src) {
+        Copy-Item $src (Join-Path $DestAgents $_) -Force
+    }
+}
+@("AGENTS.md", "GEMINI.md") | ForEach-Object {
+    $src = Join-Path $SourceAgents $_
+    if (Test-Path $src) {
+        Copy-Item $src (Join-Path $TargetPath $_) -Force
+    }
+}
+Write-Host "[+] Installed plugin manifest, AGENTS.md, GEMINI.md, and dynamic SKILLS_INDEX.md" -ForegroundColor Green
 
 # Copy Agents
 $AgentsSrc = Join-Path $SourceAgents "agents"

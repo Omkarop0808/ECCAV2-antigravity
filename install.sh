@@ -24,9 +24,18 @@ echo "[*] Destination: $DEST_AGENTS"
 
 mkdir -p "$DEST_AGENTS"
 
-# Copy plugin.json
-cp -f "$SOURCE_AGENTS/plugin.json" "$DEST_AGENTS/plugin.json"
-echo "[✓] Installed plugin.json manifest"
+# Copy Root Configurations (plugin.json, AGENTS.md, GEMINI.md, SKILLS_INDEX.md)
+for file in plugin.json AGENTS.md GEMINI.md SKILLS_INDEX.md; do
+  if [ -f "$SOURCE_AGENTS/$file" ]; then
+    cp -f "$SOURCE_AGENTS/$file" "$DEST_AGENTS/$file"
+  fi
+done
+for file in AGENTS.md GEMINI.md; do
+  if [ -f "$SOURCE_AGENTS/$file" ]; then
+    cp -f "$SOURCE_AGENTS/$file" "$TARGET_DIR/$file"
+  fi
+done
+echo "[✓] Installed plugin manifest, AGENTS.md, GEMINI.md, and dynamic SKILLS_INDEX.md"
 
 # Copy Agents
 if [ -d "$SOURCE_AGENTS/agents" ]; then

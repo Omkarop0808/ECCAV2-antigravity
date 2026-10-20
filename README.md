@@ -104,18 +104,79 @@ node scripts/doctor.js
 Expected output:
 
 ```text
-=== ECC Antigravity Doctor ===
+==========================================================
+   ECC Antigravity Diagnostic & Health Check Engine       
+==========================================================
 
 [PASS] plugin.json: ecc-antigravity v2.2.3
-[PASS] Agents directory: 71 agents detected
-[PASS] Agent frontmatter schema verification passed
-[PASS] Rules directory: 5 engineering rules detected
-[PASS] Skills directory: 148 skills packaged
+[PASS] Operating Contract: .agents/AGENTS.md detected
+[PASS] Operating Contract: .agents/GEMINI.md detected
+[PASS] Operating Contract: Root AGENTS.md detected
+[PASS] Operating Contract: Root GEMINI.md detected
+[PASS] Operating Contract: .agents/SKILLS_INDEX.md detected
+[PASS] Agents directory: 71 specialized agents detected
+[PASS] Agent frontmatter schema: 100% of agents (71/71) valid
+[PASS] Rules directory: 8 engineering rules detected
+[PASS] Found all 8 core engineering and routing rules
+[PASS] Skills directory: 148 curated skills packaged
+[PASS] Dynamic Index: All 148 skills indexed in SKILLS_INDEX.md
 [PASS] Workflows directory: 3 workflows defined
+[PASS] Installer: install.ps1 verified
+[PASS] Installer: install.sh verified
 
-Diagnostics: 6 checks passed, 0 issues found.
-✓ ECC Antigravity package is 100% healthy and ready for deployment!
+==========================================================
+Diagnostics Summary: 15 checks passed, 0 issues.
+All edge cases, agents, skills, and rules are 100% operational!
 ```
+
+---
+
+## 🧠 Edge-Case Engineering & Automatic Command Routing
+
+ECC for Antigravity is engineered with extreme attention to edge cases so that **any prompt or command you give is handled automatically, reliably, and without guesswork**.
+
+### 1. Intent A-J Automatic Routing Matrix
+
+Whenever you give any instruction, Antigravity automatically classifies the intent and applies the lightest sufficient workflow:
+
+| Intent | Scope / Request Type | Automatic Routing Flow |
+| :--- | :--- | :--- |
+| **A** | **Trivial Fix / Typo** | Direct surgical edit (`replace_file_content`) + immediate test/build check. |
+| **B** | **New Feature / Component** | `superpowers:brainstorming` ➔ `impeccable` design spec ➔ TDD ➔ build ➔ verify. |
+| **C** | **Major Architecture / System** | `gsd-plan-phase` ➔ `gsd-graphify` (token-saving graph) ➔ execute ➔ verify. |
+| **D** | **3D WebGL / R3F Experience** | `r3f-fundamentals` ➔ `r3f-shaders` / `r3f-animation` ➔ `threejs`. |
+| **E** | **Security / Threat / Auth** | `security-reviewer` persona ➔ `canary-watch` ➔ OWASP Top 10 checklist. |
+| **F** | **Networking & Telemetry** | `network-architect` / `network-troubleshooter` ➔ `network-interface-health`. |
+| **G** | **Code Review & Finishing** | `code-reviewer` ➔ `verification-before-completion` ➔ branch finishing. |
+| **H** | **Refactoring & Cleanup** | `code-simplifier` ➔ surgical diff ➔ regression test verification. |
+| **I** | **Bug Investigation / Crash** | `systematic-debugging` (Hypothesis ➔ Root Cause ➔ Surgical Fix ➔ Proof). |
+| **J** | **UI/UX Polish & Visual Audit** | `impeccable` ➔ `make-interfaces-feel-better` ➔ `liquid-glass-design`. |
+
+### 2. Solving the Context Budget Truncation Edge Case
+
+In Google Antigravity, when more than ~35 skills are installed, the IDE engine excludes the rest from the initial context prompt to preserve tokens.
+
+**How ECC-Antigravity Solves This:**
+
+- All 148 skills are cataloged in [`.agents/SKILLS_INDEX.md`](file:///.agents/SKILLS_INDEX.md) with their exact triggers and paths.
+- Governed by [`.agents/rules/automatic-routing-policy.md`](file:///.agents/rules/automatic-routing-policy.md), the agent dynamically looks up any required skill and reads `.agents/skills/<name>/SKILL.md` via `view_file` on demand.
+- Result: **Zero token bloat**, yet 100% of all 148 skills are immediately discoverable and executable on demand.
+
+### 3. Karpathy-Style Engineering Principles
+
+Enforced by [`.agents/rules/karpathy-principles.md`](file:///.agents/rules/karpathy-principles.md):
+
+- **Think Before Coding:** Explicitly state assumptions and address material ambiguity before writing code.
+- **Simplicity First:** Build the smallest working solution. Zero speculative bloat, zero unneeded dependencies.
+- **Surgical Changes:** Scoped edits that preserve existing indentation, naming, and docstrings. No drive-by refactoring.
+- **Verification Mandate:** Never claim "Done" without running the test/build command and displaying the concrete terminal evidence.
+
+### 4. Antigravity Tooling & Windows Discipline
+
+- **No `cd` Commands:** Directory switches are always handled via the `Cwd:` parameter in `run_command`.
+- **PowerShell Native:** Scripts and commands use Windows PowerShell syntax without failing on Bash-specific constructs.
+- **Surgical Edits:** File modifications use `replace_file_content` and `multi_replace_file_content` to prevent accidental overwrites.
+- **Clickable File Links:** Output always links to files using `[filename](file:///path/to/file)` format.
 
 ---
 
