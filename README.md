@@ -1,10 +1,10 @@
 # ECC for Google Antigravity (AGY-ECC) 🚀
 
-> **The ultimate agentic engineering super-harness for Google Antigravity IDE & Gemini CLI — unifying 75 specialized AI agents, Addy Osmani's Google SWE production quality gates, Impeccable Design Director, Superpowers creative thinking, GSD & Graphify token-saving codebase intelligence, and full 3D R3F/WebGPU/TSL suites (432 total production skills & 10 reference playbooks).**
+> **The ultimate agentic engineering super-harness for Google Antigravity IDE & Gemini CLI — unifying 75 specialized AI agents, Addy Osmani's Google SWE production quality gates, Impeccable Design Director, Superpowers & Cognitive Creative Thinking, GSD & Graphify token-saving codebase intelligence, and full 3D R3F/WebGPU/TSL suites (433 total production skills & 10 reference playbooks).**
 
 [![Antigravity Compatible](https://img.shields.io/badge/Harness-Google%20Antigravity-4285F4?logo=google&logoColor=white)](https://github.com/Omkarop0808/ECC-antigravity)
 [![Agents](https://img.shields.io/badge/Agents-75%20Specialized-00C853)](https://github.com/Omkarop0808/ECC-antigravity#-available-agents-catalog)
-[![Skills](https://img.shields.io/badge/Skills-432%20Production%20Skills-38BDF8)](https://github.com/Omkarop0808/ECC-antigravity#-complete-skills-catalog-432-skills)
+[![Skills](https://img.shields.io/badge/Skills-433%20Production%20Skills-38BDF8)](https://github.com/Omkarop0808/ECC-antigravity#-complete-skills-catalog-433-skills)
 [![References](https://img.shields.io/badge/References-10%20Checklists%20%26%20Handbooks-purple)](https://github.com/Omkarop0808/ECC-antigravity)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![GitHub Stars](https://img.shields.io/github/stars/Omkarop0808/ECC-antigravity?style=social)](https://github.com/Omkarop0808/ECC-antigravity)
