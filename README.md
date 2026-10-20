@@ -50,11 +50,19 @@ git clone git@github.com:Omkarop0808/ECC-antigravity.git
 
 ## ⚡ How to Install in ANY Project
 
-Once cloned, you can install the entire ECC Antigravity system into **any existing or new project** with a single command.
+### 💬 Method A: One-Prompt Instant Setup (Copy & Paste in Antigravity Chat)
 
-### Method A: Global Install (Recommended for ALL Workspaces)
+When you open **any brand-new or existing project** in Antigravity IDE, simply copy and paste this prompt into the Antigravity chat box:
 
-Installs ECC globally to `~/.gemini/config/`. Antigravity will automatically activate all 71 agents, 149 skills, and rules across **every project you ever open**, without needing per-repo installation:
+> **"Set up ECC Antigravity in this workspace: Clone `https://github.com/Omkarop0808/ECC-antigravity.git` into a temporary folder, copy `.agents/`, `.gemini/`, `AGENTS.md`, and `GEMINI.md` to this workspace root, clean up the temporary folder, and run `node scripts/doctor.js` to verify that all 75 specialized agents and 433 production skills are active."**
+
+Antigravity will autonomously clone, install, verify, and activate the full 75-agent and 433-skill operating system in under 15 seconds!
+
+---
+
+### Method B: Global Install (Recommended for ALL Workspaces)
+
+Installs ECC globally to `~/.gemini/config/`. Antigravity will automatically activate all 75 agents, 433 skills, and rules across **every project you ever open**, without needing per-repo installation:
 
 ```powershell
 # PowerShell (Windows):
@@ -64,7 +72,7 @@ Installs ECC globally to `~/.gemini/config/`. Antigravity will automatically act
 /path/to/ECC-antigravity/install.sh --global
 ```
 
-### Method B: Project-Level Install (Per-Repository)
+### Method C: Project-Level Install (Per-Repository Command)
 
 Navigate to the project you want to upgrade, and run:
 
@@ -81,9 +89,9 @@ Navigate to the project you want to upgrade, and run:
 /path/to/ECC-antigravity/install.sh /path/to/your/project
 ```
 
-### Method C: Manual Drop-In
+### Method D: Manual Drop-In
 
-Copy the `.agents/` directory directly into the root of your project:
+Copy the `.agents/` and `.gemini/` directories directly into the root of your project:
 
 ```text
 YourProjectRoot/
@@ -91,12 +99,14 @@ YourProjectRoot/
 │   ├── plugin.json
 │   ├── AGENTS.md        # Operating contract
 │   ├── GEMINI.md        # Baseline rules
-│   ├── SKILLS_INDEX.md  # Dynamic 149 skills catalog
-│   ├── agents/          # 71 specialized agent personas
-│   ├── rules/           # 9 modular engineering rules (codebase adaptation, Karpathy, security)
-│   ├── skills/          # 149 skills (Impeccable, Superpowers, GSD, 3D WebGPU, Cyber)
-│   ├── references/      # 3 deep architecture handbooks
+│   ├── SKILLS_INDEX.md  # Dynamic 433 skills catalog
+│   ├── agents/          # 75 specialized agent personas
+│   ├── rules/           # 10 modular engineering rules (Opus 5.5 / Fable, Karpathy, routing)
+│   ├── skills/          # 433 curated production skills (Google SWE, Impeccable, Superpowers, 3D WebGPU)
+│   ├── references/      # 11 deep architecture playbooks & checklists
 │   └── workflows/       # 5 autonomous workflows
+├── .gemini/
+│   └── commands/        # 9 Gemini slash commands (/build, /spec, /plan, /test...)
 ├── src/
 ├── package.json
 └── README.md
@@ -106,10 +116,14 @@ YourProjectRoot/
 
 ## 🩺 Verifying Your Installation
 
-Run the built-in diagnostic doctor to verify that all frontmatter schemas, tools, rules, and skills are healthy:
+Run the built-in diagnostic doctor and live test harness to verify that all frontmatter schemas, tools, rules, and skills are healthy:
 
 ```bash
+# 1. Run Diagnostic Doctor
 node scripts/doctor.js
+
+# 2. Run Comprehensive Live Simulation Test Harness
+node scripts/test-harness-live.js
 ```
 
 Expected output:
@@ -119,22 +133,22 @@ Expected output:
    ECC Antigravity Diagnostic & Health Check Engine       
 ==========================================================
 
-[PASS] plugin.json: ecc-antigravity v2.2.3
+[PASS] plugin.json: ecc-antigravity v2.3.1
 [PASS] Operating Contract: .agents/AGENTS.md detected
 [PASS] Operating Contract: .agents/GEMINI.md detected
 [PASS] Operating Contract: Root AGENTS.md detected
 [PASS] Operating Contract: Root GEMINI.md detected
 [PASS] Operating Contract: .agents/SKILLS_INDEX.md detected
-[PASS] Agents directory: 71 specialized agents detected
-[PASS] Agent frontmatter schema: 100% of agents (71/71) valid
-[PASS] Rules directory: 9 engineering rules detected
-[PASS] Found all 9 core engineering and routing rules
-[PASS] Skills directory: 149 curated skills packaged
-[PASS] Dynamic Index: All 149 skills indexed in SKILLS_INDEX.md
+[PASS] Agents directory: 75 specialized agents detected
+[PASS] Agent frontmatter schema: 100% of agents (75/75) valid
+[PASS] Rules directory: 10 engineering rules detected
+[PASS] Found all 10 core engineering and routing rules
+[PASS] Skills directory: 433 curated skills packaged
+[PASS] Dynamic Index: All 433 skills indexed in SKILLS_INDEX.md
 [PASS] Workflows directory: 5 workflows defined
 [PASS] Installer: install.ps1 verified
 [PASS] Installer: install.sh verified
-[PASS] References directory: 3 playbooks & architecture handbooks verified
+[PASS] References directory: 11 playbooks & architecture handbooks verified
 [PASS] Zero-Byte Audit: 0 empty files detected across entire .agents harness
 
 ==========================================================
