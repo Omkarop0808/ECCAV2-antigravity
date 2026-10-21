@@ -1,6 +1,8 @@
-# ECC for Google Antigravity (AGY-ECC) 🚀
+# ⚡ ECCA v2: Enterprise Cognitive Coding Architecture 🚀
 
-> **The ultimate agentic engineering super-harness for Google Antigravity IDE & Gemini CLI — unifying 75 specialized AI agents, Stanford STORM multi-perspective research, ByteDance DeerFlow long-horizon goal loops, LangGenius Dify resilient DAGs, Matt Pocock's domain modeling, Addy Osmani's Google SWE production quality gates, Anthropic Opus 5.5 & Fable execution discipline, Daytona execution safety envelopes, Impeccable Design Director, Superpowers & Cognitive Creative Thinking, GSD & Graphify token-saving codebase intelligence, and full 3D R3F/WebGPU/TSL suites (445 total production skills & 11 reference playbooks).**
+> **The Autonomous Multi-Agent Brain for 10x Software Engineering on Google Antigravity IDE & Gemini CLI — Unifying 75 Specialized AI Personas, Stanford STORM Multi-Perspective Research, ByteDance DeerFlow Long-Horizon Goal Loops, LangGenius Dify Resilient DAGs, Matt Pocock's Domain Modeling, Addy Osmani's Google SWE Production Quality Gates, Anthropic Opus 5.5 Execution Discipline, Daytona Safety Envelopes, Impeccable Design Engine, and 445 Production Skills into a Self-Directing Engineering Harness.**
+
+![ECCA v2 Cognitive Multi-Agent Architecture](./assets/ecca-cognitive-architecture.jpg)
 
 [![Antigravity Compatible](https://img.shields.io/badge/Harness-Google%20Antigravity-4285F4?logo=google&logoColor=white)](https://github.com/Omkarop0808/ECCAV2-antigravity)
 [![Agents](https://img.shields.io/badge/Agents-75%20Specialized-00C853)](https://github.com/Omkarop0808/ECCAV2-antigravity#-available-agents-catalog)
@@ -16,7 +18,7 @@
 
 ## 📖 Overview
 
-**ECC for Antigravity** transforms Google Antigravity into a coordinated multi-agent engineering powerhouse. It bridges and unifies the leading AI developer and agentic research ecosystems into a single turnkey `.agents/` package:
+**ECCA v2** transforms Google Antigravity into a coordinated multi-agent engineering powerhouse. It bridges and unifies the leading AI developer and agentic research ecosystems into a single turnkey package:
 
 1. 🤖 **75 Specialized Agent Personas:** Dedicated domain specialists (`security-reviewer`, `swe-code-reviewer`, `test-engineer`, `web-performance-auditor`, `network-architect`, `fastapi-reviewer`, `react-reviewer`, `silent-failure-hunter`, `performance-optimizer`, `tdd-guide`, etc.).
 2. 🔬 **Stanford STORM Multi-Perspective Research:** Eliminates shallow research via 5-phase simulated interrogation between specialized personas (`storm-research`), generating citation-backed RFC outlines before touching code.
@@ -226,36 +228,78 @@ Enforced by [`.agents/rules/karpathy-principles.md`](file:///.agents/rules/karpa
 
 ---
 
-## 🎯 How Antigravity Operates the Unified Suite
+## 🧠 The ECCA Cognitive Engine: Key Mechanism & Architecture
 
-When you interact with Google Antigravity, it automatically routes through the appropriate lens:
+ECCA v2 transforms simple prompt-response interactions into an autonomous multi-stage thinking pipeline:
 
-```text
-[Your Request: "Build this new feature or dashboard"]
-                     │
-                     ▼
-  Phase 1: Creative Thinking & User Flow
-  ↳ Agent activates `superpowers:brainstorming` + `impeccable`
-    Explores intent, bold visual palettes, layout options, and UX flow.
-                     │
-                     ▼
-  Phase 2: Token-Saving Architecture & Specs
-  ↳ Agent activates `gsd-graphify` + `gsd-plan-phase`
-    Queries the knowledge graph without wasting context tokens, 
-    then produces a verifiable milestone plan.
-                     │
-                     ▼
-  Phase 3: Deep Domain Implementation
-  ↳ Agent activates specialized ECC agents & skills:
-    - 3D elements? ➔ `r3f-fundamentals` + `threejs`
-    - High-craft UI? ➔ `ui-ux-pro-max` + `liquid-glass-design`
-    - Backend/API? ➔ `fastapi-reviewer` + `fastapi-patterns`
-    - Security/Threats? ➔ `security-reviewer` + `canary-watch`
-                     │
-                     ▼
-  Phase 4: Quality, Verification & Audit
-  ↳ Agent activates `superpowers:verification-before-completion` + `impeccable audit`
-    Runs tests, lints, and optical design checks before declaring completion.
+### 1. Multi-Agent Reasoning & Execution Flowchart
+
+```mermaid
+flowchart TD
+    User([👨‍💻 Developer Prompt]) --> HUD[⚡ Developer Transparency HUD]
+    HUD --> Intent{Intent Classification\nIntents A - J}
+    
+    subgraph CognitiveBrain ["🧠 ECCA Cognitive Brain (75 Domain Personas)"]
+        Intent -->|Architecture / Tech Eval| STORM[Stanford STORM Council\n5-Phase Perspective Interrogation]
+        Intent -->|Complex Feature / Module| Planner[Planner + Architect Personas\nSpec Extraction & Domain Models]
+        Intent -->|UI / Aesthetics| Impeccable[Impeccable Design Director\nLiquid Glass & Optical Alignment]
+        Intent -->|Bug / Flaky Test| Hunter[Silent Failure Hunter\nTDD Red-Green-Refactor]
+        Intent -->|Overnight / Long-Horizon| DeerFlow[ByteDance DeerFlow\nAutonomous Continuation Loop]
+    end
+
+    subgraph SkillsRegistry ["📦 Dynamic Skills Resolution Engine"]
+        STORM & Planner & Impeccable & Hunter & DeerFlow --> DynamicIndex[Dynamic SKILLS_INDEX.md\nSub-25ms Zero-Bloat Retrieval\n445 Curated Skills]
+    end
+
+    subgraph SafetyEnvelope ["🛡️ Daytona & GateGuard Safety Shield"]
+        DynamicIndex --> Tripwires{Tripwire Check\n.env | DB Migrations | Auth}
+        Tripwires -->|Safe Path| Tools[Surgical Tool Execution\nview_file · replace_file · run_command]
+        Tripwires -->|Sensitive Target| Sandbox[Daytona Workspace Isolation\nDry-Run Verification]
+    end
+
+    subgraph VerificationGate ["🏆 Google SWE Verification Gate"]
+        Tools & Sandbox --> Tests[Run Tests / Lints / Builds\nConcrete Terminal Evidence]
+        Tests --> Done([🚀 Verified Production Code Delivered])
+    end
+
+    classDef brain fill:#1e1e2e,stroke:#89b4fa,stroke-width:2px,color:#cdd6f4;
+    classDef skills fill:#181825,stroke:#f38ba8,stroke-width:2px,color:#cdd6f4;
+    classDef safety fill:#181825,stroke:#a6e3a1,stroke-width:2px,color:#cdd6f4;
+    classDef verify fill:#11111b,stroke:#fab387,stroke-width:2px,color:#cdd6f4;
+    class CognitiveBrain brain;
+    class SkillsRegistry skills;
+    class SafetyEnvelope safety;
+    class VerificationGate verify;
+```
+
+### 2. Autonomous Long-Horizon Goal & Error Recovery Loop
+
+```mermaid
+sequenceDiagram
+    autonumber
+    actor Dev as 👨‍💻 Developer
+    participant Agent as 🤖 ECCA Orchestrator
+    participant Council as 🏛️ Multi-Perspective Council
+    participant Git as 📦 Git Transactional Checkpointer
+    participant Compiler as ⚙️ Test & Build Engine
+
+    Dev->>Agent: /goal "Refactor auth pipeline & add passkeys"
+    Agent->>Council: Convene domain reviewers (security + fastapi)
+    Council-->>Agent: Establish invariants & task DAG
+    loop DeerFlow Continuation Loop (max_continuations = 8)
+        Agent->>Git: Commit atomic checkpoint [step_N]
+        Agent->>Agent: Surgical file modifications (replace_file_content)
+        Agent->>Compiler: Execute tests (npm test / pytest / tsc)
+        alt Tests Pass
+            Compiler-->>Agent: ✔ All assertions green
+            Agent->>Git: Save successful milestone checkpoint
+        else Failure / Error
+            Compiler-->>Agent: ✖ Test regression detected
+            Agent->>Git: Atomic rollback to last clean checkpoint
+            Agent->>Agent: Trigger systematic debugging & diagnose
+        end
+    end
+    Agent->>Dev: 🚀 Mission Complete with verified evidence logs
 ```
 
 ---
