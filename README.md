@@ -1,5 +1,7 @@
 # ⚡ ECCA v2: Enterprise Cognitive Coding Architecture 🚀
 
+![ECCA v2 Official Logo](./assets/ecca-logo.jpg)
+
 > **The Autonomous Multi-Agent Brain for 10x Software Engineering on Google Antigravity IDE & Gemini CLI — Unifying 75 Specialized AI Personas, Stanford STORM Multi-Perspective Research, ByteDance DeerFlow Long-Horizon Goal Loops, LangGenius Dify Resilient DAGs, Matt Pocock's Domain Modeling, Addy Osmani's Google SWE Production Quality Gates, Anthropic Opus 5.5 Execution Discipline, Daytona Safety Envelopes, Impeccable Design Engine, and 445 Production Skills into a Self-Directing Engineering Harness.**
 
 ![ECCA v2 Cognitive Multi-Agent Architecture](./assets/ecca-cognitive-architecture.jpg)
@@ -13,6 +15,8 @@
 [![References](https://img.shields.io/badge/References-11%20Checklists%20%26%20Handbooks-purple)](https://github.com/Omkarop0808/ECCAV2-antigravity)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![GitHub Stars](https://img.shields.io/github/stars/Omkarop0808/ECCAV2-antigravity?style=social)](https://github.com/Omkarop0808/ECCAV2-antigravity)
+
+**[⚡ Quick Install](#-how-to-install-in-any-project)** • **[🧠 Cognitive Architecture](#-the-ecca-cognitive-engine-key-mechanism--architecture)** • **[🤖 75 Agents Hub](#-multi-agent-ecosystem-hub)** • **[📦 445 Skills Catalog](#-complete-skills-catalog-445-curated-production-skills)** • **[💬 Instant Slash Commands](#1-instant-slash-commands)**
 
 ---
 
@@ -58,6 +62,27 @@ git clone git@github.com:Omkarop0808/ECCAV2-antigravity.git
 ---
 
 ## ⚡ How to Install in ANY Project
+
+```mermaid
+flowchart TD
+    Start([⚡ Choose How You Want to Run ECCA v2]) --> Pathways{Deployment Preference}
+    
+    Pathways -->|Global Across All Folders| M1["🌟 Mode 1: Global Plugin<br/><code>~/.gemini/config/plugins/ecc-antigravity</code><br/><i>Always active in every project</i>"]
+    Pathways -->|Single Project or Team Repo| M2["👥 Mode 2: Project Harness<br/><code>.agents/</code> in Project Root<br/><i>Check into Git for whole team</i>"]
+    Pathways -->|Instant Chat Command| M3["💬 Mode 3: One-Prompt Setup<br/>Paste setup prompt in chat<br/><i>Autonomous 15-second install</i>"]
+    Pathways -->|Direct File Copy| M4["📁 Mode 4: Manual Drop-In<br/>Copy <code>.agents/</code> and <code>.gemini/</code><br/><i>Complete offline control</i>"]
+    
+    M1 & M2 & M3 & M4 --> Engine[⚡ Google Antigravity IDE Engine]
+    Engine --> Doctor["🩺 Run Verification<br/><code>node scripts/doctor.js</code>"]
+    Doctor --> Success([🚀 75 Agents + 445 Skills Active!])
+    
+    classDef path fill:#1e1e2e,stroke:#89b4fa,stroke-width:2px,color:#cdd6f4;
+    classDef engine fill:#181825,stroke:#a6e3a1,stroke-width:2px,color:#cdd6f4;
+    classDef success fill:#11111b,stroke:#a6e3a1,stroke-width:2px,color:#a6e3a1;
+    class M1,M2,M3,M4 path;
+    class Engine,Doctor engine;
+    class Success success;
+```
 
 ### 🌟 Mode 1: Global Plugin (Cleanest & Recommended for All Workspaces)
 
@@ -219,6 +244,27 @@ Enforced by [`.agents/rules/karpathy-principles.md`](file:///.agents/rules/karpa
 - **Surgical Changes:** Scoped edits that preserve existing indentation, naming, and docstrings. No drive-by refactoring.
 - **Verification Mandate:** Never claim "Done" without running the test/build command and displaying the concrete terminal evidence.
 
+```mermaid
+flowchart LR
+    Code[💻 Proposed Code Edits] --> Invariants{Invariants Check<br/>Immutability & Types}
+    Invariants -->|Violation| Refactor[↩️ Refactor Domain Model]
+    Invariants -->|Pass| GateGuard{GateGuard Safety<br/>.env · Secrets · Auth}
+    GateGuard -->|Sensitive Target| Daytona[📦 Daytona Sandbox Isolation]
+    GateGuard -->|Safe Target| TestRun[🧪 Execute Test Suite<br/>npm test / pytest / tsc]
+    Daytona --> TestRun
+    TestRun --> Evidence{Concrete Evidence<br/>Green Pass?}
+    Evidence -->|Failure| Debug[🕵️ Systematic Debugging<br/>Root Cause Proof]
+    Debug --> Invariants
+    Evidence -->|All Green| Verified([🏆 Verified Production Code])
+    
+    classDef gate fill:#1e1e2e,stroke:#89b4fa,stroke-width:2px,color:#cdd6f4;
+    classDef check fill:#181825,stroke:#fab387,stroke-width:2px,color:#cdd6f4;
+    classDef success fill:#11111b,stroke:#a6e3a1,stroke-width:2px,color:#a6e3a1;
+    class Code,Refactor,Daytona,TestRun,Debug gate;
+    class Invariants,GateGuard,Evidence check;
+    class Verified success;
+```
+
 ### 4. Antigravity Tooling & Windows Discipline
 
 - **No `cd` Commands:** Directory switches are always handled via the `Cwd:` parameter in `run_command`.
@@ -304,7 +350,65 @@ sequenceDiagram
 
 ---
 
-## 🤖 Available Agents Catalog (Selected Core)
+## 🤖 Multi-Agent Ecosystem Hub
+
+![ECCA Multi-Agent Ecosystem Hub](./assets/ecca-agents-hub.jpg)
+
+ECCA v2 orchestrates **75 specialized domain personas** mapped into 5 elite engineering pillars. Every persona operates with deep situational context, specialized tool allowances, and strict architectural discipline:
+
+### The 5 Core Engineering Pillars
+
+1. 🏛️ **Lead Architect & System Designer** (`architect`, `planner`, `spec-miner`)
+   - High-level topology planning, system decomposition, distributed architecture, and Matt Pocock domain invariant modeling.
+2. 🎨 **UI / UX Design Director** (`impeccable`, `a11y-architect`, `liquid-glass-design`)
+   - Apple-grade liquid glass aesthetic, optical alignment, typography hierarchies, fluid micro-interactions, and WCAG 2.2 AA accessibility.
+3. 🔁 **Autonomous Goal Orchestrator** (`autonomous-goal`, `resilient-dag-refactor`, `gsd-manager`)
+   - ByteDance DeerFlow 8-step long-horizon goal loop, transactional Git checkpointing, and LangGenius Dify DAG error recovery.
+4. 🛡️ **Cybersecurity & Safety Guardian** (`security-reviewer`, `gateguard`, `canary-watch`)
+   - OWASP Top 10 defenses, zero hardcoded secrets, GateGuard tripwires on sensitive files, and Daytona blast-radius workspace containment.
+5. 🧪 **Google SWE Test & Quality Engineer** (`test-engineer`, `silent-failure-hunter`, `tdd-guide`)
+   - Addy Osmani production quality gates, Red-Green-Refactor test cycle enforcement, Rule of 500, and Chesterton's Fence simplification.
+
+### 3. Multi-Agent Swarm Wave Parallelization Flowchart
+
+```mermaid
+flowchart TD
+    Orchestrator([🤖 Lead Architect Orchestrator]) --> Wave1[🌊 Wave 1: Specification & Threat Modeling]
+    
+    subgraph Wave1Group ["Wave 1: Invariants & Security"]
+        Wave1 --> Domain[📐 Matt Pocock Domain Modeling\nInvariants & Branded Types]
+        Wave1 --> Security[🛡️ GateGuard Threat Review\nOWASP & Secrets Scanning]
+    end
+    
+    Domain & Security --> Wave2[🌊 Wave 2: Parallel Implementation Swarm]
+    
+    subgraph Wave2Group ["Wave 2: Multi-Persona Execution"]
+        Wave2 --> UI[🎨 UI / 3D Graphics Persona\nLiquid Glass & R3F WebGPU]
+        Wave2 --> Backend[⚡ Backend Persona\nFastAPI / Node / Go Services]
+        Wave2 --> DB[🗄️ Database Persona\nPostgreSQL & Migration Safety]
+    end
+    
+    UI & Backend & DB --> Wave3[🌊 Wave 3: Quality & Verification Gates]
+    
+    subgraph Wave3Group ["Wave 3: Google SWE Production Gate"]
+        Wave3 --> TDD[🧪 TDD Red-Green-Refactor\n80%+ Test Coverage]
+        Wave3 --> Vitals[⏱️ Chrome DevTools MCP\nCore Web Vitals & Latency]
+        Wave3 --> Hunter[🕵️ Silent Failure Hunter\nUncaught Promises & Leaks]
+    end
+    
+    TDD & Vitals & Hunter --> Complete([🚀 Verified Production Delivery])
+    
+    classDef wave fill:#1e1e2e,stroke:#89b4fa,stroke-width:2px,color:#cdd6f4;
+    classDef sub fill:#181825,stroke:#cba6f7,stroke-width:1px,color:#cdd6f4;
+    classDef success fill:#11111b,stroke:#a6e3a1,stroke-width:2px,color:#a6e3a1;
+    class Wave1,Wave2,Wave3 wave;
+    class Domain,Security,UI,Backend,DB,TDD,Vitals,Hunter sub;
+    class Complete success;
+```
+
+---
+
+### Available Agents Catalog (Selected Core)
 
 | Agent Persona | Category | Core Specialty |
 | :--- | :--- | :--- |
