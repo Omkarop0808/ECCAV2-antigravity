@@ -37,15 +37,15 @@
 
 ```mermaid
 flowchart TD
-    Start([⚡ Choose Setup Mode]) --> Pathways{Deployment Preference}
+    Start(["⚡ Choose Setup Mode"]) --> Pathways{"Deployment Preference"}
     
-    Pathways -->|Global Across All Folders| M1["🌟 Mode 1: Global Plugin<br/><code>~/.gemini/config/plugins/ecc-antigravity</code><br/><i>Always active in every project</i>"]
-    Pathways -->|Single Project or Team Repo| M2["👥 Mode 2: Project Harness<br/><code>.agents/</code> in Project Root<br/><i>Check into Git for whole team</i>"]
-    Pathways -->|Instant Chat Command| M3["💬 Mode 3: One-Prompt Setup<br/>Paste setup prompt in chat<br/><i>Autonomous 15-second install</i>"]
+    Pathways -->|Global Across All Folders| M1["🌟 Mode 1: Global Plugin<br/>~/.gemini/config/plugins/ecc-antigravity<br/>Always active in every project"]
+    Pathways -->|Single Project or Team Repo| M2["👥 Mode 2: Project Harness<br/>.agents/ in Project Root<br/>Check into Git for whole team"]
+    Pathways -->|Instant Chat Command| M3["💬 Mode 3: One-Prompt Setup<br/>Paste setup prompt in chat<br/>Autonomous 15-second install"]
     
-    M1 & M2 & M3 --> Engine[⚡ Google Antigravity IDE Engine]
-    Engine --> Doctor["🩺 Run Verification<br/><code>node scripts/doctor.js</code>"]
-    Doctor --> Success([🚀 75 Agents + 445 Skills Active!])
+    M1 & M2 & M3 --> Engine["⚡ Google Antigravity IDE Engine"]
+    Engine --> Doctor["🩺 Run Verification<br/>node scripts/doctor.js"]
+    Doctor --> Success(["🚀 75 Agents + 445 Skills Active!"])
     
     classDef path fill:#1e1e2e,stroke:#89b4fa,stroke-width:2px,color:#cdd6f4;
     classDef engine fill:#181825,stroke:#a6e3a1,stroke-width:2px,color:#cdd6f4;
@@ -116,30 +116,30 @@ Runs 17 comprehensive health checks (agents frontmatter, 445 indexed skills, saf
 
 ```mermaid
 flowchart TD
-    User([👨‍💻 Developer Prompt]) --> HUD[⚡ Developer Transparency HUD]
-    HUD --> Intent{Intent Classification\nIntents A - J}
+    User(["👨‍💻 Developer Prompt"]) --> HUD["⚡ Developer Transparency HUD"]
+    HUD --> Intent{"Intent Classification<br/>Intents A - J"}
     
     subgraph CognitiveBrain ["🧠 ECCA Cognitive Brain (75 Domain Personas)"]
-        Intent -->|Architecture / Tech Eval| STORM[Stanford STORM Council\n5-Phase Perspective Interrogation]
-        Intent -->|Complex Feature / Module| Planner[Planner + Architect Personas\nSpec Extraction & Domain Models]
-        Intent -->|UI / Aesthetics| Impeccable[Impeccable Design Director\nLiquid Glass & Optical Alignment]
-        Intent -->|Bug / Flaky Test| Hunter[Silent Failure Hunter\nTDD Red-Green-Refactor]
-        Intent -->|Overnight / Long-Horizon| DeerFlow[ByteDance DeerFlow\nAutonomous Continuation Loop]
+        Intent -->|Architecture / Tech Eval| STORM["Stanford STORM Council<br/>5-Phase Perspective Interrogation"]
+        Intent -->|Complex Feature / Module| Planner["Planner + Architect Personas<br/>Spec Extraction & Domain Models"]
+        Intent -->|UI / Aesthetics| Impeccable["Impeccable Design Director<br/>Liquid Glass & Optical Alignment"]
+        Intent -->|Bug / Flaky Test| Hunter["Silent Failure Hunter<br/>TDD Red-Green-Refactor"]
+        Intent -->|Overnight / Long-Horizon| DeerFlow["ByteDance DeerFlow<br/>Autonomous Continuation Loop"]
     end
 
     subgraph SkillsRegistry ["📦 Dynamic Skills Resolution Engine"]
-        STORM & Planner & Impeccable & Hunter & DeerFlow --> DynamicIndex[Dynamic SKILLS_INDEX.md\nSub-25ms Zero-Bloat Retrieval\n445 Curated Skills]
+        STORM & Planner & Impeccable & Hunter & DeerFlow --> DynamicIndex["Dynamic SKILLS_INDEX.md<br/>Sub-25ms Zero-Bloat Retrieval<br/>445 Curated Skills"]
     end
 
     subgraph SafetyEnvelope ["🛡️ Daytona & GateGuard Safety Shield"]
-        DynamicIndex --> Tripwires{Tripwire Check\n.env | DB Migrations | Auth}
-        Tripwires -->|Safe Path| Tools[Surgical Tool Execution\nview_file · replace_file · run_command]
-        Tripwires -->|Sensitive Target| Sandbox[Daytona Workspace Isolation\nDry-Run Verification]
+        DynamicIndex --> Tripwires{"Tripwire Check<br/>.env • DB Migrations • Auth"}
+        Tripwires -->|Safe Path| Tools["Surgical Tool Execution<br/>view_file · replace_file · run_command"]
+        Tripwires -->|Sensitive Target| Sandbox["Daytona Workspace Isolation<br/>Dry-Run Verification"]
     end
 
     subgraph VerificationGate ["🏆 Google SWE Verification Gate"]
-        Tools & Sandbox --> Tests[Run Tests / Lints / Builds\nConcrete Terminal Evidence]
-        Tests --> Done([🚀 Verified Production Code Delivered])
+        Tools & Sandbox --> Tests["Run Tests / Lints / Builds<br/>Concrete Terminal Evidence"]
+        Tests --> Done(["🚀 Verified Production Code Delivered"])
     end
 
     classDef brain fill:#1e1e2e,stroke:#89b4fa,stroke-width:2px,color:#cdd6f4;
@@ -194,7 +194,7 @@ ECCA v2 orchestrates **75 specialized domain personas** mapped into 5 elite engi
 | :--- | :--- | :--- |
 | 🏛️ **Lead Architecture** | Topology, invariants, distributed flows | `architect`, `planner`, `domain-modeling`, `to-spec` |
 | 🎨 **UI / UX Direction** | Apple liquid glass, typography, motion | `impeccable`, `a11y-architect`, `liquid-glass-design` |
-| 🔁 **Goal Orchestration**| Autonomous 8-step loops & error DAGs | `autonomous-goal`, `resilient-dag-refactor`, `gsd-manager` |
+| 🔁 **Goal Orchestration** | Autonomous 8-step loops & error DAGs | `autonomous-goal`, `resilient-dag-refactor`, `gsd-manager` |
 | 🛡️ **Security Guardian** | Zero-leak secrets, OWASP, tripwires | `security-reviewer`, `gateguard`, `canary-watch` |
 | 🧪 **SWE Quality Gate** | TDD Red-Green-Refactor, telemetry | `test-engineer`, `silent-failure-hunter`, `tdd-guide` |
 
@@ -202,30 +202,30 @@ ECCA v2 orchestrates **75 specialized domain personas** mapped into 5 elite engi
 
 ```mermaid
 flowchart TD
-    Orchestrator([🤖 Lead Architect Orchestrator]) --> Wave1[🌊 Wave 1: Invariants & Security]
+    Orchestrator(["🤖 Lead Architect Orchestrator"]) --> Wave1["🌊 Wave 1: Invariants & Security"]
     
     subgraph Wave1Group ["Wave 1: Specification & Security"]
-        Wave1 --> Domain[📐 Matt Pocock Domain Modeling\nInvariants & Branded Types]
-        Wave1 --> Security[🛡️ GateGuard Threat Review\nOWASP & Secrets Scanning]
+        Wave1 --> Domain["📐 Matt Pocock Domain Modeling<br/>Invariants & Branded Types"]
+        Wave1 --> Security["🛡️ GateGuard Threat Review<br/>OWASP & Secrets Scanning"]
     end
     
-    Domain & Security --> Wave2[🌊 Wave 2: Parallel Implementation Swarm]
+    Domain & Security --> Wave2["🌊 Wave 2: Parallel Implementation Swarm"]
     
     subgraph Wave2Group ["Wave 2: Multi-Persona Execution"]
-        Wave2 --> UI[🎨 UI / 3D Graphics Persona\nLiquid Glass & R3F WebGPU]
-        Wave2 --> Backend[⚡ Backend Persona\nFastAPI / Node / Go Services]
-        Wave2 --> DB[🗄️ Database Persona\nPostgreSQL & Migration Safety]
+        Wave2 --> UI["🎨 UI / 3D Graphics Persona<br/>Liquid Glass & R3F WebGPU"]
+        Wave2 --> Backend["⚡ Backend Persona<br/>FastAPI / Node / Go Services"]
+        Wave2 --> DB["🗄️ Database Persona<br/>PostgreSQL & Migration Safety"]
     end
     
-    UI & Backend & DB --> Wave3[🌊 Wave 3: Google SWE Quality Gate]
+    UI & Backend & DB --> Wave3["🌊 Wave 3: Google SWE Quality Gate"]
     
     subgraph Wave3Group ["Wave 3: Verification & Polish"]
-        Wave3 --> TDD[🧪 TDD Red-Green-Refactor\n80%+ Test Coverage]
-        Wave3 --> Vitals[⏱️ Chrome DevTools MCP\nCore Web Vitals & Latency]
-        Wave3 --> Hunter[🕵️ Silent Failure Hunter\nUncaught Promises & Leaks]
+        Wave3 --> TDD["🧪 TDD Red-Green-Refactor<br/>80%+ Test Coverage"]
+        Wave3 --> Vitals["⏱️ Chrome DevTools MCP<br/>Core Web Vitals & Latency"]
+        Wave3 --> Hunter["🕵️ Silent Failure Hunter<br/>Uncaught Promises & Leaks"]
     end
     
-    TDD & Vitals & Hunter --> Complete([🚀 Verified Production Delivery])
+    TDD & Vitals & Hunter --> Complete(["🚀 Verified Production Delivery"])
     
     classDef wave fill:#1e1e2e,stroke:#89b4fa,stroke-width:2px,color:#cdd6f4;
     classDef sub fill:#181825,stroke:#cba6f7,stroke-width:1px,color:#cdd6f4;
@@ -245,12 +245,12 @@ To prevent context window bloat, ECCA v2 uses a **Dynamic Sub-25ms Skills Resolv
 | :--- | :--- | :--- |
 | 🎨 **UI/UX & Design Craft** | 11 skills | `impeccable`, `liquid-glass-design`, `ui-ux-pro-max`, `make-interfaces-feel-better` |
 | 🎮 **3D WebGPU & Shaders** | 13 skills | `threejs-tsl-webgpu`, `r3f-fundamentals`, `r3f-shaders`, `r3f-physics`, `r3f-materials` |
-| 🧠 **GSD & Graphify Engine**| 64 skills | `gsd-graphify` (saves 70%+ token context), `gsd-plan-phase`, `gsd-audit-fix` |
-| 🔬 **Research & Autonomous**| 5 skills | `storm-research` (Stanford 5-phase), `autonomous-goal` (DeerFlow loop), `resilient-dag-refactor` |
-| 🛡️ **Cybersecurity & Safety**| 8 skills | `canary-watch`, `security-review`, `agent-security-hardening`, `gateguard` |
+| 🧠 **GSD & Graphify Engine** | 64 skills | `gsd-graphify` (saves 70%+ token context), `gsd-plan-phase`, `gsd-audit-fix` |
+| 🔬 **Research & Autonomous** | 5 skills | `storm-research` (Stanford 5-phase), `autonomous-goal` (DeerFlow loop), `resilient-dag-refactor` |
+| 🛡️ **Cybersecurity & Safety** | 8 skills | `canary-watch`, `security-review`, `agent-security-hardening`, `gateguard` |
 | 📐 **Domain Modeling** | 11 skills | `domain-modeling` (Matt Pocock invariants), `to-spec`, `grill-with-docs`, `wizard` |
 | 🌐 **Networking & Infra** | 8 skills | `network-interface-health`, `network-bgp-diagnostics`, `netmiko-ssh-automation` |
-| ⚡ **Languages & Frameworks**| 325 skills | FastAPI, React, Next.js, Node, Python, Go, Rust, Java, Swift, Kotlin, Docker, SQL |
+| ⚡ **Languages & Frameworks** | 325 skills | FastAPI, React, Next.js, Node, Python, Go, Rust, Java, Swift, Kotlin, Docker, SQL |
 
 > 👉 **Search the full catalog of all 445 skills with triggers and paths in [`.agents/SKILLS_INDEX.md`](file:///.agents/SKILLS_INDEX.md).**
 
