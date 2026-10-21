@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 # ECC for Google Antigravity - One-Click Installer (Bash / Unix / WSL)
 # Usage:
-#   ./install.sh [/path/to/target/project]   (Installs to project .agents/)
-#   ./install.sh --global                    (Installs globally to ~/.gemini/config/ for all workspaces)
+#   ./install.sh --plugin                   (Installs as global Antigravity plugin to ~/.gemini/config/plugins/ecc-antigravity)
+#   ./install.sh [/path/to/target/project]  (Installs to project .agents/)
+#   ./install.sh --global                   (Installs globally to ~/.gemini/config/ root)
 
 set -e
 
@@ -19,16 +20,23 @@ if [ ! -d "$SOURCE_AGENTS" ]; then
   exit 1
 fi
 
-if [ "$ARG" = "--global" ] || [ "$ARG" = "-g" ]; then
+IS_PLUGIN=0
+IS_GLOBAL=0
+
+if [ "$ARG" = "--plugin" ] || [ "$ARG" = "-p" ]; then
+  DEST_AGENTS="$HOME/.gemini/config/plugins/ecc-antigravity"
+  IS_PLUGIN=1
+  echo "[*] Mode: GLOBAL PLUGIN (Cleanly isolated in ~/.gemini/config/plugins/ecc-antigravity)"
+  echo "[*] Destination: $DEST_AGENTS"
+elif [ "$ARG" = "--global" ] || [ "$ARG" = "-g" ]; then
   DEST_AGENTS="$HOME/.gemini/config"
   IS_GLOBAL=1
-  echo "[*] Mode: GLOBAL (Applies to ALL projects opened in Antigravity)"
+  echo "[*] Mode: GLOBAL ROOT (Directly in ~/.gemini/config/)"
   echo "[*] Destination: $DEST_AGENTS"
 else
   TARGET_DIR="$ARG"
   DEST_AGENTS="$TARGET_DIR/.agents"
-  IS_GLOBAL=0
-  echo "[*] Mode: PROJECT (Local to $TARGET_DIR)"
+  echo "[*] Mode: PROJECT HARNESS (Local to $TARGET_DIR)"
   echo "[*] Destination: $DEST_AGENTS"
   mkdir -p "$TARGET_DIR"
 fi
@@ -91,5 +99,15 @@ if [ -d "$SOURCE_AGENTS/references" ]; then
 fi
 
 echo ""
-echo "[SUCCESS] ECC Antigravity is now fully active in: $TARGET_DIR"
-echo "Open the project in Antigravity IDE and start coding with 75 specialized agents and 433 production skills!"
+if [ "$IS_PLUGIN" -eq 1 ]; then
+  echo "[SUCCESS] ECC Antigravity is now fully installed as a Global Plugin!"
+  echo "Destination: $DEST_AGENTS"
+  echo "Google Antigravity IDE will automatically recognize the 'ecc-antigravity' plugin across ALL workspaces."
+elif [ "$IS_GLOBAL" -eq 1 ]; then
+  echo "[SUCCESS] ECC Antigravity is now active globally across all workspaces!"
+  echo "Destination: $DEST_AGENTS"
+  echo "All 75 agents and 445 skills are globally active."
+else
+  echo "[SUCCESS] ECC Antigravity is now fully active in: $TARGET_DIR"
+  echo "Open the project in Antigravity IDE and start coding with 75 specialized agents and 445 production skills!"
+fi

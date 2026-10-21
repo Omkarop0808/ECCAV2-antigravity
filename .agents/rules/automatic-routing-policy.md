@@ -9,13 +9,13 @@ Every user prompt or engineering task received in this environment must be class
 | Intent | Category | Scope / Trigger | Required Engine / Skills |
 | :--- | :--- | :--- | :--- |
 | **A** | **Trivial Fix / Typo** | Single-line fix, typo, variable rename | Direct surgical edit + verify syntax/build |
-| **B** | **New Feature / Component** | Adding new capabilities, UI screens, API endpoints | `superpowers:brainstorming` -> `impeccable` design review -> `test-driven-development` -> implement -> verify |
-| **C** | **Major Architecture / System** | Multi-file refactor, new subsystem, database migration | `gsd-plan-phase` -> `gsd-graphify` -> spec ADR -> `gsd-execute-phase` -> verify |
+| **B** | **New Feature / Component** | Adding new capabilities, UI screens, API endpoints | `domain-modeling` / `to-spec` -> `superpowers:brainstorming` -> `impeccable` -> `test-driven-development` -> implement -> verify |
+| **C** | **Major Architecture / System** | Multi-file refactor, new subsystem, database migration | `storm-research` -> `gsd-plan-phase` / `autonomous-goal` -> `resilient-dag-refactor` -> spec ADR -> verify |
 | **D** | **3D WebGL / WebGPU / R3F** | Canvas setup, TSL shaders, compute passes, 3D meshes | `threejs` -> `threejs-tsl-webgpu` -> `r3f-fundamentals` -> `r3f-shaders` |
-| **E** | **Security / Vulnerability / Auth** | Handling secrets, input validation, encryption, JWT | `security-reviewer` agent -> `canary-watch` -> OWASP Top 10 checklist |
+| **E** | **Security / Vulnerability / Auth** | Handling secrets, input validation, encryption, JWT | `security-reviewer` agent -> `gateguard-safety-envelope` -> `canary-watch` -> OWASP Top 10 checklist |
 | **F** | **Networking & Telemetry** | Packet inspection, routing, sockets, interface health | `network-architect` / `network-troubleshooter` -> `network-interface-health` |
 | **G** | **Code Review & Branch Finishing** | PR preparation, diff review, merge readiness | `code-reviewer` agent -> `verification-before-completion` -> `finishing-a-development-branch` |
-| **H** | **Refactoring & Dead Code** | Code cleanup without changing external behavior | `code-simplifier` agent -> regression test verification |
+| **H** | **Refactoring & Dead Code** | Code cleanup without changing external behavior | `code-simplifier` agent -> `resilient-dag-refactor` -> regression test verification |
 | **I** | **Bug Investigation & Crash** | Test failure, runtime exception, unexpected state | `systematic-debugging` (reproduce -> root cause -> surgical fix -> regression test) |
 | **J** | **UI/UX Polish & Visual Audit** | Visual hierarchy, spacing, contrast, motion | `impeccable` -> `make-interfaces-feel-better` -> `liquid-glass-design` |
 

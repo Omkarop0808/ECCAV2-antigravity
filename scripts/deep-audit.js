@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const root = 'c:/dev/CNminiproject/ecc-antigravity';
+const root = path.resolve(__dirname, '..');
 const agents = path.join(root, '.agents');
 
 let errors = [];
@@ -127,7 +127,8 @@ function scanZeros(dir) {
   let zeros = [];
   const entries = fs.readdirSync(dir, { withFileTypes: true });
   for (const ent of entries) {
-    if (ent.name === '.git') continue;
+    const ignoredDirs = ['.git', 'node_modules', 'ECC', 'dify', 'storm', 'skills', 'daytona-v0', 'deer-flow'];
+    if (ignoredDirs.includes(ent.name)) continue;
     const full = path.join(dir, ent.name);
     if (ent.isDirectory()) {
       zeros = zeros.concat(scanZeros(full));

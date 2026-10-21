@@ -1,11 +1,13 @@
 # ECC for Google Antigravity - One-Click Installer (PowerShell)
 # Usage:
+#   .\install.ps1 -Plugin                      (Installs as global Antigravity plugin to ~/.gemini/config/plugins/ecc-antigravity)
 #   .\install.ps1                              (Installs to current workspace .agents/)
 #   .\install.ps1 -TargetPath "C:\other\repo"  (Installs to target project .agents/)
-#   .\install.ps1 -Global                      (Installs globally to ~/.gemini/config/ for all workspaces)
+#   .\install.ps1 -Global                      (Installs globally to ~/.gemini/config/ root)
 
 param (
     [string]$TargetPath,
+    [switch]$Plugin,
     [switch]$Global,
     [switch]$Force
 )
@@ -20,17 +22,27 @@ if (-not (Test-Path $SourceAgents)) {
     exit 1
 }
 
-if ($Global) {
+$IsPluginMode = $false
+$IsGlobalMode = $false
+
+if ($Plugin) {
+    # Antigravity Global Namespaced Plugin Root
+    $DestAgents = Join-Path $env:USERPROFILE ".gemini\config\plugins\ecc-antigravity"
+    $IsPluginMode = $true
+    Write-Host "[*] Mode: GLOBAL PLUGIN (Cleanly isolated in ~/.gemini/config/plugins/ecc-antigravity)" -ForegroundColor Magenta
+    Write-Host "[*] Destination: $DestAgents" -ForegroundColor Gray
+} elseif ($Global) {
     # Antigravity Global Customizations Root
     $DestAgents = Join-Path $env:USERPROFILE ".gemini\config"
-    Write-Host "[*] Mode: GLOBAL (Applies to ALL projects opened in Antigravity)" -ForegroundColor Magenta
+    $IsGlobalMode = $true
+    Write-Host "[*] Mode: GLOBAL ROOT (Directly in ~/.gemini/config/)" -ForegroundColor Magenta
     Write-Host "[*] Destination: $DestAgents" -ForegroundColor Gray
 } else {
     if ([string]::IsNullOrWhiteSpace($TargetPath)) {
         $TargetPath = (Get-Location).Path
     }
     $DestAgents = Join-Path $TargetPath ".agents"
-    Write-Host "[*] Mode: PROJECT (Local to $TargetPath)" -ForegroundColor Cyan
+    Write-Host "[*] Mode: PROJECT HARNESS (Local to $TargetPath)" -ForegroundColor Cyan
     Write-Host "[*] Destination: $DestAgents" -ForegroundColor Gray
 
     if (-not (Test-Path $TargetPath)) {
@@ -50,7 +62,7 @@ if (-not (Test-Path $DestAgents)) {
         Copy-Item $src (Join-Path $DestAgents $_) -Force
     }
 }
-if (-not $Global) {
+if (-not $IsPluginMode -and -not $IsGlobalMode) {
     @("AGENTS.md", "GEMINI.md") | ForEach-Object {
         $src = Join-Path $SourceAgents $_
         if (Test-Path $src) {
@@ -110,6 +122,16 @@ if (Test-Path $RefsSrc) {
 }
 
 Write-Host ""
-Write-Host "[SUCCESS] ECC Antigravity is now fully active in: $TargetPath" -ForegroundColor Green
-Write-Host "Open the project in Antigravity IDE and start coding with 75 specialized agents and 433 production skills!" -ForegroundColor Cyan
+if ($IsPluginMode) {
+    Write-Host "[SUCCESS] ECC Antigravity is now fully installed as a Global Plugin!" -ForegroundColor Green
+    Write-Host "Destination: $DestAgents" -ForegroundColor Gray
+    Write-Host "Google Antigravity IDE will automatically recognize the 'ecc-antigravity' plugin across ALL workspaces." -ForegroundColor Cyan
+} elseif ($IsGlobalMode) {
+    Write-Host "[SUCCESS] ECC Antigravity is now active globally across all workspaces!" -ForegroundColor Green
+    Write-Host "Destination: $DestAgents" -ForegroundColor Gray
+    Write-Host "All 75 agents and 445 skills are globally active." -ForegroundColor Cyan
+} else {
+    Write-Host "[SUCCESS] ECC Antigravity is now fully active in: $TargetPath" -ForegroundColor Green
+    Write-Host "Open the project in Antigravity IDE and start coding with 75 specialized agents and 445 production skills!" -ForegroundColor Cyan
+}
 Write-Host ""

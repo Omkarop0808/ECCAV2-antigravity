@@ -1,0 +1,10 @@
+description = "Execute domain modeling, type invariants, and glossary definition before coding (Matt Pocock pattern)"
+
+prompt = """
+Activate the domain-modeling skill (.agents/skills/domain-modeling/SKILL.md).
+
+1. Review and sharpen domain terminology. Clarify fuzzy, ambiguous, or overloaded terms.
+2. Define explicit invariants, state machines, and discriminated unions before writing implementation code.
+3. Cross-reference proposed models with existing codebase reality and document all decisions in GLOSSARY.md or docs/adr/.
+4. Propose concrete scenarios to stress-test domain boundaries and edge cases.
+"""

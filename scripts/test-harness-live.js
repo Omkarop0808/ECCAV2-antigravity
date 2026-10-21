@@ -2,7 +2,7 @@
  * Comprehensive Live Verification & End-to-End Simulation Test Suite
  * Validates:
  * 1. 75 Agents Schema, Persona & Tool Boundaries
- * 2. 433 Production Skills Structural Integrity & SKILLS_INDEX Resolution
+ * 2. 445 Production Skills Structural Integrity & SKILLS_INDEX Resolution
  * 3. 10 Foundational Engineering Rules & Intent Policy
  * 4. 11 Architecture Playbooks & Reference Handbooks
  * 5. 9 Gemini / Antigravity Slash Commands
@@ -59,14 +59,14 @@ for (const file of agentFiles) {
 assert(validAgentsCount === 75, `All 75 agents conform to schema (valid: ${validAgentsCount}/75)`);
 
 // -------------------------------------------------------------
-// Test Suite 2: 433 Production Skills Integrity & Index Match
+// Test Suite 2: 445 Production Skills Integrity & Index Match
 // -------------------------------------------------------------
-console.log('\n--- Suite 2: Production Skills & Dynamic Index (433 Target) ---');
+console.log('\n--- Suite 2: Production Skills & Dynamic Index (445 Target) ---');
 const skillDirs = fs.readdirSync(SKILLS_DIR).filter(d => {
   const p = path.join(SKILLS_DIR, d);
   return fs.statSync(p).isDirectory();
 });
-assert(skillDirs.length === 433, `Expected exactly 433 skills directories, found: ${skillDirs.length}`);
+assert(skillDirs.length === 445, `Expected exactly 445 skills directories, found: ${skillDirs.length}`);
 
 let validSkillsCount = 0;
 for (const dir of skillDirs) {
@@ -78,7 +78,7 @@ for (const dir of skillDirs) {
     }
   }
 }
-assert(validSkillsCount === 433, `All 433 skills have valid SKILL.md (valid: ${validSkillsCount}/433)`);
+assert(validSkillsCount === 445, `All 445 skills have valid SKILL.md (valid: ${validSkillsCount}/445)`);
 
 // Test index matching
 const indexContent = fs.readFileSync(INDEX_PATH, 'utf8');
@@ -88,21 +88,21 @@ for (const dir of skillDirs) {
     indexedCount++;
   }
 }
-assert(indexedCount === 433, `100% of skills are dynamically indexed in SKILLS_INDEX.md (${indexedCount}/433)`);
+assert(indexedCount === 445, `100% of skills are dynamically indexed in SKILLS_INDEX.md (${indexedCount}/445)`);
 
 // Benchmark lookup latency
 const t0 = process.hrtime.bigint();
 const lookupTest = skillDirs.every(dir => indexContent.includes(dir));
 const t1 = process.hrtime.bigint();
 const lookupMs = Number(t1 - t0) / 1000000;
-assert(lookupTest && lookupMs < 50, `Sub-millisecond index query latency (${lookupMs.toFixed(2)}ms for all 433 skills)`);
+assert(lookupTest && lookupMs < 50, `Sub-millisecond index query latency (${lookupMs.toFixed(2)}ms for all 445 skills)`);
 
 // -------------------------------------------------------------
-// Test Suite 3: 10 Foundational Engineering Rules
+// Test Suite 3: 11 Foundational Engineering Rules
 // -------------------------------------------------------------
-console.log('\n--- Suite 3: Foundational Engineering Rules (10 Target) ---');
+console.log('\n--- Suite 3: Foundational Engineering Rules (11 Target) ---');
 const ruleFiles = fs.readdirSync(RULES_DIR).filter(f => f.endsWith('.md'));
-assert(ruleFiles.length === 10, `Expected 10 foundational rules, found: ${ruleFiles.length}`);
+assert(ruleFiles.length === 11, `Expected 11 foundational rules, found: ${ruleFiles.length}`);
 
 const routingRule = fs.readFileSync(path.join(RULES_DIR, 'automatic-routing-policy.md'), 'utf8');
 assert(routingRule.includes('| **A** |') && routingRule.includes('| **J** |'), 'Routing policy contains full Intent A through J coverage');
@@ -112,6 +112,9 @@ assert(opusFableRule.includes('Opus 5.5') && opusFableRule.includes('Fable'), 'O
 
 const karpathyRule = fs.readFileSync(path.join(RULES_DIR, 'karpathy-principles.md'), 'utf8');
 assert(karpathyRule.includes('Simplicity First') && karpathyRule.includes('Surgical Changes'), 'Karpathy simplicity and surgical precision active');
+
+const gateguardRule = fs.readFileSync(path.join(RULES_DIR, 'gateguard-safety-envelope.md'), 'utf8');
+assert(gateguardRule.includes('Sensitive Target Tripwires') && gateguardRule.includes('Workspace Containment'), 'GateGuard and Daytona safety envelope verified');
 
 // -------------------------------------------------------------
 // Test Suite 4: 11 Architecture Playbooks & Reference Checklists
@@ -128,11 +131,11 @@ for (const f of refFiles) {
 assert(substantiveRefs === 11, `All 11 reference playbooks have detailed content (verified: ${substantiveRefs}/11)`);
 
 // -------------------------------------------------------------
-// Test Suite 5: 9 Gemini / Antigravity Slash Commands
+// Test Suite 5: 12 Gemini / Antigravity Slash Commands
 // -------------------------------------------------------------
-console.log('\n--- Suite 5: Gemini / Antigravity Slash Commands (9 Target) ---');
+console.log('\n--- Suite 5: Gemini / Antigravity Slash Commands (12 Target) ---');
 const cmdFiles = fs.readdirSync(COMMANDS_DIR).filter(f => f.endsWith('.toml'));
-assert(cmdFiles.length === 9, `Expected 9 slash commands, found: ${cmdFiles.length}`);
+assert(cmdFiles.length === 12, `Expected 12 slash commands, found: ${cmdFiles.length}`);
 
 let validCmds = 0;
 for (const f of cmdFiles) {
@@ -141,7 +144,7 @@ for (const f of cmdFiles) {
     validCmds++;
   }
 }
-assert(validCmds === 9, `All 9 slash commands have valid TOML configurations (${validCmds}/9)`);
+assert(validCmds === 12, `All 12 slash commands have valid TOML configurations (${validCmds}/12)`);
 
 // -------------------------------------------------------------
 // Test Suite 6: Live Dispatch Simulation Across Real Scenarios
@@ -178,6 +181,36 @@ const scenarios = [
     prompt: 'Perform comprehensive security, regression, and quality review before merging PR',
     expectedAgents: ['swe-code-reviewer', 'code-reviewer'],
     expectedSkills: ['requesting-code-review', 'verification-before-completion']
+  },
+  {
+    name: 'Scenario F: Stanford STORM Multi-Perspective Research & Domain Modeling',
+    prompt: 'Conduct a multi-perspective technical audit and establish domain models for real-time payments',
+    expectedAgents: ['architect', 'security-reviewer'],
+    expectedSkills: ['storm-research', 'domain-modeling', 'to-spec']
+  },
+  {
+    name: 'Scenario G: ByteDance DeerFlow Autonomous Goal Loop & Dify DAG Refactor',
+    prompt: 'Execute long-horizon multi-step codebase refactor with atomic checkpoints and call-site propagation',
+    expectedAgents: ['code-simplifier', 'architect'],
+    expectedSkills: ['wayfinder', 'improve-codebase-architecture', 'codebase-design']
+  },
+  {
+    name: 'Scenario H: Impeccable Design & Liquid Glass UI Engineering',
+    prompt: 'Design a liquid glass navbar with micro-animations, keyboard accessibility, and design tokens',
+    expectedAgents: ['react-reviewer', 'a11y-architect'],
+    expectedSkills: ['impeccable', 'liquid-glass-design', 'make-interfaces-feel-better', 'frontend-design']
+  },
+  {
+    name: 'Scenario I: GateGuard Safety Envelope & Tripwire Containment',
+    prompt: 'Refactor database migrations and environment secrets with strict safety containment and dry runs',
+    expectedAgents: ['security-auditor', 'database-reviewer'],
+    expectedSkills: ['gateguard', 'database-migrations', 'security-and-hardening']
+  },
+  {
+    name: 'Scenario J: Fullstack Next.js / TypeScript Web Application',
+    prompt: 'Build a Next.js application with TypeScript strict typing, server components, and test coverage',
+    expectedAgents: ['typescript-reviewer', 'react-reviewer'],
+    expectedSkills: ['nextjs-turbopack', 'react-patterns', 'test-driven-development']
   }
 ];
 

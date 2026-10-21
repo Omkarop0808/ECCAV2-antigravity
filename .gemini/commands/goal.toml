@@ -1,0 +1,13 @@
+description = "Execute an autonomous long-horizon goal loop with checkpoints and verification invariants (DeerFlow pattern)"
+
+prompt = """
+Activate the autonomous-goal workflow (.agents/workflows/autonomous-goal.md).
+
+1. Define the user's objective as a concrete Goal with measurable acceptance criteria and strict verification invariants.
+2. Establish a pre-execution Git checkpoint:
+   git stash create "pre-goal-checkpoint"
+3. Decompose the goal into a dependency DAG of small, testable tasks.
+4. Execute up to 8 autonomous iterations (max_continuations = 8), running step-level verification tests after every change.
+5. If an iteration introduces regression errors, self-heal or revert to the checkpoint.
+6. Evaluate all invariants, display full terminal test proof, and present the final deliverable.
+"""

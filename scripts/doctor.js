@@ -94,7 +94,8 @@ function runDoctor() {
       'react-typescript.md',
       'cyber-defense-security.md',
       'web-design-system.md',
-      'anthropic-agentic-discipline.md'
+      'anthropic-agentic-discipline.md',
+      'gateguard-safety-envelope.md'
     ];
     let allExpected = true;
     for (const er of expectedRules) {

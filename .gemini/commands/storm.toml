@@ -1,0 +1,11 @@
+description = "Run Stanford STORM multi-perspective technical research and RFC synthesis"
+
+prompt = """
+Activate the storm-research skill (.agents/skills/storm-research/SKILL.md).
+
+1. Identify 3 to 5 distinct technical personas (System Architect, Performance SRE, Security Auditor, DX Engineer).
+2. For each persona, interrogate upstream documentation, source code, and live search for concrete metrics, failure modes, and API contracts.
+3. Synthesize facts into an exhaustive hierarchical outline covering architecture, edge cases, and alternatives.
+4. Draft the deep evaluation document resolving tensions between personas with hard evidence.
+5. Conclude with a definitive Decision & Tradeoff Matrix and output a ready-to-review RFC document.
+"""

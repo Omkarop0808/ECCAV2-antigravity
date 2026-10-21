@@ -5,3 +5,14 @@ Thumbs.db
 .vscode/
 .idea/
 *.tmp
+ECC/
+dify/
+storm/
+agent-skills/
+skills/
+hermes-agent/
+firecrawl/
+browser-use/
+daytona/
+daytona*/
+deer-flow/

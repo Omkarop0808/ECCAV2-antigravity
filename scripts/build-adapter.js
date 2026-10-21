@@ -91,8 +91,8 @@ function adaptAgentContent(content, fileName) {
 }
 
 function build() {
-  const rootDir = path.resolve(__dirname, '..');
-  const eccSourceDir = path.resolve(rootDir, '..', 'ECC');
+  const localEcc = path.join(rootDir, 'ECC');
+  const eccSourceDir = fs.existsSync(localEcc) ? localEcc : path.resolve(rootDir, '..', 'ECC');
   const targetAgentsDir = path.join(rootDir, '.agents');
   const targetAgentsOut = path.join(targetAgentsDir, 'agents');
   const targetRulesOut = path.join(targetAgentsDir, 'rules');
@@ -208,16 +208,17 @@ function build() {
   // 3. Create Antigravity Plugin Manifest
   const manifest = {
     name: 'ecc-antigravity',
-    version: '2.2.3',
-    description: 'ECC Antigravity Adapter & Engineering System - 71 specialized agents, enterprise rules, curated skills, and workflows tailored for Google Antigravity IDE and agents',
+    version: '2.4.0',
+    description: 'ECC Antigravity Harness - 75 specialized agents, 445 production skills, 11 engineering rules, and 7 autonomous workflows tailored for Google Antigravity IDE and Gemini CLI',
     author: 'Community / Antigravity Bridge',
     license: 'MIT',
-    homepage: 'https://github.com/affaan-m/ECC',
+    homepage: 'https://github.com/Omkarop0808/ECCAV2-antigravity',
     customizations: {
       agents: './agents',
       rules: './rules',
       skills: './skills',
-      workflows: './workflows'
+      workflows: './workflows',
+      references: './references'
     }
   };
   fs.writeFileSync(path.join(targetAgentsDir, 'plugin.json'), JSON.stringify(manifest, null, 2) + '\n', 'utf8');

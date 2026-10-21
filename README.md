@@ -1,28 +1,35 @@
 # ECC for Google Antigravity (AGY-ECC) 🚀
 
-> **The ultimate agentic engineering super-harness for Google Antigravity IDE & Gemini CLI — unifying 75 specialized AI agents, Addy Osmani's Google SWE production quality gates, Anthropic Opus 5.5 & Fable execution discipline, Impeccable Design Director, Superpowers & Cognitive Creative Thinking, GSD & Graphify token-saving codebase intelligence, and full 3D R3F/WebGPU/TSL suites (433 total production skills & 11 reference playbooks).**
+> **The ultimate agentic engineering super-harness for Google Antigravity IDE & Gemini CLI — unifying 75 specialized AI agents, Stanford STORM multi-perspective research, ByteDance DeerFlow long-horizon goal loops, LangGenius Dify resilient DAGs, Matt Pocock's domain modeling, Addy Osmani's Google SWE production quality gates, Anthropic Opus 5.5 & Fable execution discipline, Daytona execution safety envelopes, Impeccable Design Director, Superpowers & Cognitive Creative Thinking, GSD & Graphify token-saving codebase intelligence, and full 3D R3F/WebGPU/TSL suites (445 total production skills & 11 reference playbooks).**
 
-[![Antigravity Compatible](https://img.shields.io/badge/Harness-Google%20Antigravity-4285F4?logo=google&logoColor=white)](https://github.com/Omkarop0808/ECC-antigravity)
-[![Agents](https://img.shields.io/badge/Agents-75%20Specialized-00C853)](https://github.com/Omkarop0808/ECC-antigravity#-available-agents-catalog)
-[![Skills](https://img.shields.io/badge/Skills-433%20Production%20Skills-38BDF8)](https://github.com/Omkarop0808/ECC-antigravity#-complete-skills-catalog-433-skills)
-[![Rules](https://img.shields.io/badge/Rules-10%20Core%20Rules-orange)](https://github.com/Omkarop0808/ECC-antigravity)
-[![References](https://img.shields.io/badge/References-11%20Checklists%20%26%20Handbooks-purple)](https://github.com/Omkarop0808/ECC-antigravity)
+[![Antigravity Compatible](https://img.shields.io/badge/Harness-Google%20Antigravity-4285F4?logo=google&logoColor=white)](https://github.com/Omkarop0808/ECCAV2-antigravity)
+[![Agents](https://img.shields.io/badge/Agents-75%20Specialized-00C853)](https://github.com/Omkarop0808/ECCAV2-antigravity#-available-agents-catalog)
+[![Skills](https://img.shields.io/badge/Skills-445%20Production%20Skills-38BDF8)](https://github.com/Omkarop0808/ECCAV2-antigravity#-complete-skills-catalog-445-skills)
+[![Rules](https://img.shields.io/badge/Rules-11%20Core%20Rules-orange)](https://github.com/Omkarop0808/ECCAV2-antigravity)
+[![Workflows](https://img.shields.io/badge/Workflows-7%20Autonomous%20Pipelines-blue)](https://github.com/Omkarop0808/ECCAV2-antigravity)
+[![Commands](https://img.shields.io/badge/Commands-12%20Slash%20Commands-green)](https://github.com/Omkarop0808/ECCAV2-antigravity)
+[![References](https://img.shields.io/badge/References-11%20Checklists%20%26%20Handbooks-purple)](https://github.com/Omkarop0808/ECCAV2-antigravity)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/Omkarop0808/ECC-antigravity?style=social)](https://github.com/Omkarop0808/ECC-antigravity)
+[![GitHub Stars](https://img.shields.io/github/stars/Omkarop0808/ECCAV2-antigravity?style=social)](https://github.com/Omkarop0808/ECCAV2-antigravity)
 
 ---
 
 ## 📖 Overview
 
-**ECC for Antigravity** transforms Google Antigravity into a coordinated multi-agent engineering powerhouse. It bridges and unifies the seven most celebrated AI developer ecosystems into a single turnkey `.agents/` package:
+**ECC for Antigravity** transforms Google Antigravity into a coordinated multi-agent engineering powerhouse. It bridges and unifies the leading AI developer and agentic research ecosystems into a single turnkey `.agents/` package:
 
 1. 🤖 **75 Specialized Agent Personas:** Dedicated domain specialists (`security-reviewer`, `swe-code-reviewer`, `test-engineer`, `web-performance-auditor`, `network-architect`, `fastapi-reviewer`, `react-reviewer`, `silent-failure-hunter`, `performance-optimizer`, `tdd-guide`, etc.).
-2. 🏆 **Google SWE Production Discipline (Addy Osmani `agent-skills`):** Anti-rationalization guards, `doubt-driven-development` (internal adversarial check), `constraint-driven-development` (anti-cheating floor guard), `source-driven-development` (hallucination breaker with doc citations), `code-simplification` (Rule of 500 & Chesterton's Fence), Chrome DevTools MCP live telemetry, and 7 Google-grade production checklists.
-3. ⚡ **Anthropic Frontier Execution Standards (Opus 5.5 & Fable 5.1):** Dynamic autonomous loop pacing with prompt cache preservation, task DAG dependency graphs with anti-rationalization completion invariants, and zero-chatter tool reply hygiene (`anthropic-agentic-discipline.md`).
-4. 🎨 **Impeccable Design Engine (v4.1.2):** Award-winning design direction, optical alignment, visual hierarchy, typography, palettes, and design audits.
-5. ⚡ **Superpowers Creative & Engineering Discipline:** Lateral brainstorming, systematic debugging without guesswork, test-driven development, and plan execution.
-6. 🧠 **GSD (Get Shit Done) & Graphify:** Codebase knowledge graph indexing (`.planning/graphs/`) to eliminate token waste, accompanied by phase planning and milestone audits.
-7. 🎮 **Complete 3D R3F, WebGPU & TSL Suite:** 13 dedicated 3D skills covering WebGPU pipelines, Three.js Shading Language (TSL) node materials, shaders, GPU compute particles, physics, lighting, animation, textures, and post-processing.
+2. 🔬 **Stanford STORM Multi-Perspective Research:** Eliminates shallow research via 5-phase simulated interrogation between specialized personas (`storm-research`), generating citation-backed RFC outlines before touching code.
+3. 🔁 **ByteDance DeerFlow Autonomous Goal Continuation:** Long-horizon execution loops (`autonomous-goal`) with `max_continuations = 8`, transactional Git checkpointing, and step-level invariant evaluation.
+4. 🏗️ **LangGenius Dify Resilient DAG Refactoring:** Dependency-aware refactoring DAGs (`resilient-dag-refactor`) with typed state handoffs, error traps, and caller propagation.
+5. 🛡️ **Daytona & GateGuard Execution Safety Envelope:** First-touch tripwires on `.env`, secrets, auth, and database migrations, paired with strict workspace blast-radius containment (`gateguard-safety-envelope.md`).
+6. 📐 **Matt Pocock High-Craft Engineering Skills:** Domain modeling, branded types, discriminated unions (`domain-modeling`), spec interrogation (`to-spec`, `grill-with-docs`), and codebase wayfinding (`wayfinder`, `wizard`).
+7. 🏆 **Google SWE Production Discipline (Addy Osmani `agent-skills`):** Anti-rationalization guards, `doubt-driven-development`, `constraint-driven-development`, `source-driven-development`, `code-simplification` (Rule of 500 & Chesterton's Fence), Chrome DevTools MCP live telemetry, and Google-grade production checklists.
+8. ⚡ **Anthropic Frontier Execution Standards (Opus 5.5 & Fable 5.1):** Dynamic autonomous loop pacing with prompt cache preservation, task DAG dependency graphs with anti-rationalization completion invariants, and zero-chatter tool reply hygiene (`anthropic-agentic-discipline.md`).
+9. 🎨 **Impeccable Design Engine (v4.1.2):** Award-winning design direction, optical alignment, visual hierarchy, typography, palettes, and design audits.
+10. ⚡ **Superpowers Creative & Engineering Discipline:** Lateral brainstorming, systematic debugging without guesswork, test-driven development, and plan execution.
+11. 🧠 **GSD (Get Shit Done) & Graphify:** Codebase knowledge graph indexing (`.planning/graphs/`) to eliminate token waste, accompanied by phase planning and milestone audits.
+12. 🎮 **Complete 3D R3F, WebGPU & TSL Suite:** 13 dedicated 3D skills covering WebGPU pipelines, Three.js Shading Language (TSL) node materials, shaders, GPU compute particles, physics, lighting, animation, textures, and post-processing.
 
 ---
 
@@ -34,62 +41,74 @@ Open your terminal or PowerShell and clone the repository:
 
 ```powershell
 # Clone via HTTPS:
-git clone https://github.com/Omkarop0808/ECC-antigravity.git
+git clone https://github.com/Omkarop0808/ECCAV2-antigravity.git
 
 # Or clone via SSH:
-git clone git@github.com:Omkarop0808/ECC-antigravity.git
+git clone git@github.com:Omkarop0808/ECCAV2-antigravity.git
 ```
 
 ### Option 2: Download ZIP
 
 1. Click the green **Code** button at the top of the GitHub page.
 2. Select **Download ZIP**.
-3. Extract the folder (e.g., `C:\dev\ECC-antigravity` or `~/dev/ECC-antigravity`).
+3. Extract the folder (e.g., `C:\dev\ECCAV2-antigravity` or `~/dev/ECCAV2-antigravity`).
 
 ---
 
 ## ⚡ How to Install in ANY Project
 
-### 💬 Method A: One-Prompt Instant Setup (Copy & Paste in Antigravity Chat)
+### 🌟 Mode 1: Global Plugin (Cleanest & Recommended for All Workspaces)
 
-When you open **any brand-new or existing project** in Antigravity IDE, simply copy and paste this prompt into the Antigravity chat box:
+Installs ECC as a dedicated, namespaced Antigravity plugin (`~/.gemini/config/plugins/ecc-antigravity`). Because it lives in Antigravity's **Global Customization Root**, all 75 agents and 445 skills are automatically active across **every single project and folder you open**:
 
-> **"Set up ECC Antigravity in this workspace: Clone `https://github.com/Omkarop0808/ECC-antigravity.git` into a temporary folder, copy `.agents/`, `.gemini/`, `AGENTS.md`, and `GEMINI.md` to this workspace root, clean up the temporary folder, and run `node scripts/doctor.js` to verify that all 75 specialized agents and 433 production skills are active."**
+```bash
+# Clone directly as a global plugin (macOS / Linux / Windows Git Bash):
+git clone https://github.com/Omkarop0808/ECCAV2-antigravity.git ~/.gemini/config/plugins/ecc-antigravity
+```
 
-Antigravity will autonomously clone, install, verify, and activate the full 75-agent and 433-skill operating system in under 15 seconds!
-
----
-
-### Method B: Global Install (Recommended for ALL Workspaces)
-
-Installs ECC globally to `~/.gemini/config/`. Antigravity will automatically activate all 75 agents, 433 skills, and rules across **every project you ever open**, without needing per-repo installation:
+Or if you already cloned the repository:
 
 ```powershell
 # PowerShell (Windows):
-& "C:\path\to\ECC-antigravity\install.ps1" -Global
-
-# Bash (macOS / Linux / WSL):
-/path/to/ECC-antigravity/install.sh --global
-```
-
-### Method C: Project-Level Install (Per-Repository Command)
-
-Navigate to the project you want to upgrade, and run:
-
-```powershell
-# In your target project directory (e.g. C:\dev\MyProject):
-& "C:\path\to\ECC-antigravity\install.ps1"
-
-# Or specify -TargetPath explicitly:
-& "C:\path\to\ECC-antigravity\install.ps1" -TargetPath "C:\dev\MyProject"
+& "C:\path\to\ECC-antigravity\install.ps1" -Plugin
 ```
 
 ```bash
-# macOS / Linux / WSL:
-/path/to/ECC-antigravity/install.sh /path/to/your/project
+# Bash (macOS / Linux / WSL):
+/path/to/ECC-antigravity/install.sh --plugin
 ```
 
-### Method D: Manual Drop-In
+> **Why this is the best mode:** Completely sandboxed in `plugins/ecc-antigravity/`, never overwrites your personal configs, active everywhere, and updates in 1 second via `git pull`!
+
+---
+
+### 👥 Mode 2: Project Harness (Recommended for Teams, Git Repos & Hackathons)
+
+Installs the full `.agents/` environment directly into a specific project repository root. Check it into Git so that anyone who clones your project gets all 75 agents, 445 skills, and 11 engineering rules automatically:
+
+```powershell
+# In PowerShell:
+& "C:\path\to\ECC-antigravity\install.ps1" -TargetPath "C:\path\to\YourProject"
+```
+
+```bash
+# In Bash (macOS / Linux / WSL):
+/path/to/ECC-antigravity/install.sh /path/to/YourProject
+```
+
+---
+
+### 💬 Mode 3: One-Prompt Instant Setup (In Any Antigravity Chat)
+
+When you open **any brand-new or existing project** in Antigravity IDE, simply copy and paste this prompt into the Antigravity chat box:
+
+> **"Set up ECC Antigravity in this workspace: Clone `https://github.com/Omkarop0808/ECCAV2-antigravity.git` into a temporary folder, copy `.agents/`, `.gemini/`, `AGENTS.md`, and `GEMINI.md` to this workspace root, clean up the temporary folder, and run `node scripts/doctor.js` to verify that all 75 specialized agents and 445 production skills are active."**
+
+Antigravity will autonomously clone, install, verify, and activate the full 75-agent and 445-skill operating system in under 15 seconds!
+
+---
+
+### 📁 Mode 4: Manual Drop-In
 
 Copy the `.agents/` and `.gemini/` directories directly into the root of your project:
 
@@ -99,14 +118,14 @@ YourProjectRoot/
 │   ├── plugin.json
 │   ├── AGENTS.md        # Operating contract
 │   ├── GEMINI.md        # Baseline rules
-│   ├── SKILLS_INDEX.md  # Dynamic 433 skills catalog
+│   ├── SKILLS_INDEX.md  # Dynamic 445 skills catalog
 │   ├── agents/          # 75 specialized agent personas
-│   ├── rules/           # 10 modular engineering rules (Opus 5.5 / Fable, Karpathy, routing)
-│   ├── skills/          # 433 curated production skills (Google SWE, Impeccable, Superpowers, 3D WebGPU)
+│   ├── rules/           # 11 modular engineering rules (GateGuard safety, Karpathy, routing)
+│   ├── skills/          # 445 curated production skills (Google SWE, STORM, Impeccable, 3D WebGPU)
 │   ├── references/      # 11 deep architecture playbooks & checklists
-│   └── workflows/       # 5 autonomous workflows
+│   └── workflows/       # 7 autonomous workflows (DeerFlow goals, Dify DAGs)
 ├── .gemini/
-│   └── commands/        # 9 Gemini slash commands (/build, /spec, /plan, /test...)
+│   └── commands/        # 12 Gemini slash commands (/goal, /storm, /domain-model, /build...)
 ├── src/
 ├── package.json
 └── README.md
@@ -133,7 +152,7 @@ Expected output:
    ECC Antigravity Diagnostic & Health Check Engine       
 ==========================================================
 
-[PASS] plugin.json: ecc-antigravity v2.3.1
+[PASS] plugin.json: ecc-antigravity v2.4.0
 [PASS] Operating Contract: .agents/AGENTS.md detected
 [PASS] Operating Contract: .agents/GEMINI.md detected
 [PASS] Operating Contract: Root AGENTS.md detected
@@ -141,11 +160,11 @@ Expected output:
 [PASS] Operating Contract: .agents/SKILLS_INDEX.md detected
 [PASS] Agents directory: 75 specialized agents detected
 [PASS] Agent frontmatter schema: 100% of agents (75/75) valid
-[PASS] Rules directory: 10 engineering rules detected
-[PASS] Found all 10 core engineering and routing rules
-[PASS] Skills directory: 433 curated skills packaged
-[PASS] Dynamic Index: All 433 skills indexed in SKILLS_INDEX.md
-[PASS] Workflows directory: 5 workflows defined
+[PASS] Rules directory: 11 engineering rules detected
+[PASS] Found all 11 core engineering and routing rules
+[PASS] Skills directory: 445 curated skills packaged
+[PASS] Dynamic Index: All 445 skills indexed in SKILLS_INDEX.md
+[PASS] Workflows directory: 7 workflows defined
 [PASS] Installer: install.ps1 verified
 [PASS] Installer: install.sh verified
 [PASS] References directory: 11 playbooks & architecture handbooks verified
@@ -185,9 +204,9 @@ In Google Antigravity, when more than ~35 skills are installed, the IDE engine e
 
 **How ECC-Antigravity Solves This:**
 
-- All 148 skills are cataloged in [`.agents/SKILLS_INDEX.md`](file:///.agents/SKILLS_INDEX.md) with their exact triggers and paths.
+- All 445 skills are cataloged in [`.agents/SKILLS_INDEX.md`](file:///.agents/SKILLS_INDEX.md) with their exact triggers and paths.
 - Governed by [`.agents/rules/automatic-routing-policy.md`](file:///.agents/rules/automatic-routing-policy.md), the agent dynamically looks up any required skill and reads `.agents/skills/<name>/SKILL.md` via `view_file` on demand.
-- Result: **Zero token bloat**, yet 100% of all 148 skills are immediately discoverable and executable on demand.
+- Result: **Zero token bloat**, yet 100% of all 445 skills are immediately discoverable and executable on demand with ~24ms lookup latency.
 
 ### 3. Karpathy-Style Engineering Principles
 
@@ -263,11 +282,11 @@ When you interact with Google Antigravity, it automatically routes through the a
 | **`database-reviewer`** | Database | Query performance, schema indexes, migration safety |
 | **`e2e-runner`** | Testing | Playwright end-to-end user flow testing |
 | **`pr-test-analyzer`** | Testing | PR test coverage completeness before merging |
-| *(+ 53 additional agents)* | Various | Full support for Go, Rust, Java, Python, Swift, Kotlin, Vue, and more |
+| *(+ 57 additional agents)* | Various | Full support for Go, Rust, Java, Python, Swift, Kotlin, Vue, and more (75 total) |
 
 ---
 
-## 📦 Complete Skills Catalog (148 Skills)
+## 📦 Complete Skills Catalog (445 Curated Production Skills)
 
 ### 1. Impeccable Design Engine (v4.1.2)
 
@@ -355,27 +374,116 @@ When you interact with Google Antigravity, it automatically routes through the a
 - `continuous-learning`, `continuous-learning-v2`, `cost-aware-llm-pipeline`, `council`, `council-multi-model`
 - `team-builder`, `deep-research`, `search-first`, `dashboard-builder`, `ui-demo`
 
-### 10. Architecture Playbooks & Deep References (3 Handbooks)
+### 10. Research, Autonomous Goals & Resilient Workflows
 
-- `threejs-tsl-webgpu-handbook.md` — Three.js TSL syntax, WebGPURenderer initialization, node materials, GPU compute passes, and resource lifecycle/cleanup patterns.
-- `react-three-fibre.md` — Production R3F architecture, fiber reconciliation, canvas lifecycle, and Drei integration.
-- `claude-frontend-design-skill.md` — Art direction for high-craft web design, typography, palettes, and visual hierarchy.
+- `storm-research` — Stanford 5-phase multi-perspective simulated interrogation & citation-backed RFC generation.
+- `autonomous-goal` — ByteDance DeerFlow long-horizon continuation loop with Git checkpointing (`max_continuations = 8`).
+- `resilient-dag-refactor` — LangGenius Dify dependency-aware refactoring DAG with error recovery traps.
+- `gateguard` & `gateguard-safety-envelope` — Daytona workspace isolation and sensitive target tripwires.
+
+### 11. Matt Pocock High-Craft Architecture Skills (11 Skills)
+
+- `domain-modeling` — Ubiquitous language, domain invariants, branded types, and discriminated unions.
+- `to-spec` — Ambiguity-busting spec extraction before implementation.
+- `grill-with-docs` — Socratic codebase and document interrogation.
+- `wayfinder` & `wizard` — Codebase navigation, semantic wayfinding, and architecture guidance.
+- `codebase-design` & `improve-codebase-architecture` — Structural clarity and technical debt remediation.
+- `diagnosing-bugs` — Diagnostic hypotheses and root-cause tracing without speculative fixes.
+- `to-tickets` & `to-questionnaire` — Decomposing specs into actionable issue tickets.
+- `writing-for-agents` — Clean agentic contracts and specification authoring.
+
+### 12. Architecture Playbooks & Deep References (11 Handbooks)
+
+All 11 reference handbooks are located in [`.agents/references/`](file:///.agents/references/):
+
+1. **`anthropic-opus-fable-playbook.md`** — Autonomous loop pacing, dynamic prompt cache preservation, task DAG graphs, zero-chatter replies.
+2. **`orchestration-patterns.md`** — Multi-agent collaboration, subagent dispatch, dynamic skills loading, and memory handoffs.
+3. **`threejs-tsl-webgpu-handbook.md`** — Three.js TSL syntax, WebGPURenderer initialization, node materials, GPU compute passes, and cleanup.
+4. **`react-three-fibre.md`** — Production R3F architecture, canvas lifecycle, shader materials, and Drei integration.
+5. **`claude-frontend-design-skill.md`** — Art direction for high-craft web design, typography, palettes, and visual hierarchy.
+6. **`definition-of-done.md`** — Google SWE verification invariants, zero-chatter tests, and PR completeness.
+7. **`security-checklist.md`** — OWASP Top 10, secrets hygiene, input sanitization, CSRF/CORS, and GateGuard safety.
+8. **`performance-checklist.md`** — Core Web Vitals (LCP, INP, CLS), bundle size budgets, memoization, and database query optimization.
+9. **`accessibility-checklist.md`** — WCAG 2.2 AA compliance, ARIA attributes, keyboard navigation, and screen reader testing.
+10. **`observability-checklist.md`** — Structured logging, OpenTelemetry tracing, error boundaries, and metrics dashboards.
+11. **`testing-patterns.md`** — Unit, integration, E2E, snapshot testing, property-based testing, and TDD discipline.
+
+---
+
+## 🚀 How to Use ECC Antigravity to its Full Extent in Your Workspace
+
+ECC Antigravity is built so you **never have to memorize skill names or manage agents manually**. You have two effortless ways to command it:
+
+### 1. Instant Slash Commands
+
+| Command | What It Triggers | When to Use |
+| :--- | :--- | :--- |
+| **`/goal`** | ByteDance DeerFlow Autonomous Loop (`max_continuations = 8`) | Long-horizon overnight tasks, complex multi-file features. |
+| **`/storm`** | Stanford STORM Multi-Perspective Research Protocol | Technical evaluation, architecture RFCs, comparing libraries. |
+| **`/domain-model`** | Matt Pocock Domain Modeling & Branded Types | Clarifying core business logic, invariants, discriminated unions. |
+| **`/build`** | Phased Feature Architecture & Implementation | Building significant new screens, modules, or services. |
+| **`/spec`** | Spec-Driven Development Pipeline | Clarifying requirements, edge cases, and acceptance criteria. |
+| **`/test`** | Google SWE Test-Driven Development (Red-Green-Refactor) | Adding comprehensive unit, integration, and E2E test suites. |
+| **`/ship`** | Full Verification, Lint, Security & PR Finishing | Running full pre-merge quality gates before pushing code. |
+
+---
+
+### 2. Natural Prompting (Zero Memorization)
+
+Simply state what you want to achieve. The **Automatic Routing Matrix** will immediately identify the context, adopt the domain personas, and pull the exact skills required:
+
+#### ⚡ Backend & API Engineering
+
+> *"Build a FastAPI route for stripe webhook verification with idempotency keys in Redis and full error handling."*
+> ↳ **Autonomous Action:** Adopts `fastapi-reviewer` + `security-reviewer`, loads `fastapi-patterns`, `redis-patterns`, and `security-review`.
+
+#### 🎨 Impeccable Frontend Design
+
+> *"Design a liquid glass navbar with subtle specular borders, smooth blur, micro-hover animations, and WCAG keyboard accessibility."*
+> ↳ **Autonomous Action:** Adopts `impeccable` + `a11y-architect`, loads `liquid-glass-design`, `make-interfaces-feel-better`, and `design-system`.
+
+#### 🎮 3D WebGPU Graphics
+
+> *"Create an interactive React Three Fiber particle canvas with a custom WebGPU compute pass using Three.js Shading Language (TSL)."*
+> ↳ **Autonomous Action:** Adopts `react-reviewer` + `architect`, loads `threejs-tsl-webgpu`, `r3f-fundamentals`, and `r3f-shaders`.
+
+#### 🔍 Systematic Bug Resolution
+
+> *"Our websocket connection drops silently under load and causes a memory leak on reconnection."*
+> ↳ **Autonomous Action:** Adopts `silent-failure-hunter` + `performance-optimizer`, loads `systematic-debugging` and `debugging-and-error-recovery`.
+
+#### 🔬 Stanford STORM Tech Research
+
+> *"Evaluate whether we should migrate our real-time messaging pipeline from Node.js to Go or Rust. Produce a citation-backed RFC."*
+> ↳ **Autonomous Action:** Adopts `architect` + `code-explorer`, executes the 5-phase `storm-research` protocol with simulated stakeholder interrogation.
+
+---
+
+### 3. The Developer Transparency HUD
+
+Whenever starting any non-trivial engineering task, ECC Antigravity will display a concise Transparency HUD at the top of its response:
+
+```markdown
+> ⚡ **[Persona: `architect` + `security-reviewer` | Skills: `domain-modeling`, `storm-research` | Mode: Intent C]**
+```
+
+This ensures complete visibility into what domain standards, safety guards, and architectural perspectives are governing your code.
 
 ---
 
 ## 🔧 Rebuilding from Source
 
-If you wish to pull newer agents or update your local build:
+If you wish to re-compile or audit your local installation:
 
 ```bash
 # 1. Run the adapter compiler:
 node scripts/build-adapter.js
 
-# 2. Re-import super skills (Impeccable, Superpowers, GSD):
-node scripts/import-super-skills.js
-
-# 3. Verify all components:
+# 2. Run Diagnostic Doctor:
 node scripts/doctor.js
+
+# 3. Run Live Simulation Test Harness:
+node scripts/test-harness-live.js
 ```
 
 ---
